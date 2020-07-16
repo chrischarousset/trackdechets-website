@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "gatsby develop"
+  },
+  "dependencies": {
+    "gatsby": "^2.24.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
