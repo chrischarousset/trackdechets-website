@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{uanL:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return c}));var u=e("q1tI"),r=e("V65f");function c(){return u.createElement(r.d,null)}}}]);
+//# sourceMappingURL=component---src-pages-partners-tsx-1b10f4ef897377b7d96b.js.map
