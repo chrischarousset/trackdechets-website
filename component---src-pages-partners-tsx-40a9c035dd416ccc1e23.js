@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{uanL:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return a})),t.d(e,"pageQuery",(function(){return o}));var r=t("q1tI"),u=t("V65f");function a(n){var e=n.data.allFile.edges;return r.createElement(u.c,{logos:e.map((function(n){return n.node}))})}var o="473931646"}}]);
+//# sourceMappingURL=component---src-pages-partners-tsx-40a9c035dd416ccc1e23.js.map

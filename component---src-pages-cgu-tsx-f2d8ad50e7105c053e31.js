@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{GIzg:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return c}));var u=e("q1tI"),r=e("V65f");function c(){return u.createElement(r.a,null)}}}]);
-//# sourceMappingURL=component---src-pages-cgu-tsx-f2d8ad50e7105c053e31.js.map
