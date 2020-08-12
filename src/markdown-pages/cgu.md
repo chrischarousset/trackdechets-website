@@ -1,5 +1,5 @@
 ---
-path: "/cgu"
+url: "/cgu"
 ---
 
 # CGU - TRACKDECHETS

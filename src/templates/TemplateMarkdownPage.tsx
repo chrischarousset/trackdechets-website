@@ -58,8 +58,8 @@ export default function TemplateMarkdownPage({
 }
 
 export const pageQuery = graphql`
-  query GetPageContent($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query GetPageContent($url: String!) {
+    markdownRemark(frontmatter: { url: { eq: $url } }) {
       htmlAst
     }
   }

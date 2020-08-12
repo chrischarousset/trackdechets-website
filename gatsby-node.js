@@ -8,7 +8,7 @@ async function createPages({ actions, graphql, reporter }) {
         edges {
           node {
             frontmatter {
-              path
+              url
             }
           }
         }
@@ -23,10 +23,10 @@ async function createPages({ actions, graphql, reporter }) {
 
   data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.path,
+      path: node.frontmatter.url,
       component: path.resolve("src", "templates", "TemplateMarkdownPage.tsx"),
       context: {
-        path: node.frontmatter.path,
+        url: node.frontmatter.url,
       },
     });
   });

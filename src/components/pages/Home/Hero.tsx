@@ -27,6 +27,7 @@ const HeroInnerContainer = styled(Container)`
   }
 `;
 const HeroContent = styled.div`
+  text-align: center;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -37,16 +38,13 @@ const HeroContent = styled.div`
   }
 `;
 const HeroHeading = styled(Typography).attrs({ as: "h1", variant: "h1" })`
-  max-width: 26rem;
   margin-bottom: ${(props) => props.theme.spacing(4)};
 
   @media ${(props) => props.theme.breakpoints.up("medium")} {
     margin-bottom: ${(props) => props.theme.spacing(12)};
   }
 `;
-const HeroAction = styled.div`
-  text-align: center;
-`;
+const HeroAction = styled.div``;
 const HeroIllustration = styled.div`
   padding: ${(props) => props.theme.spacing(4)};
   background-color: ${(props) => props.theme.colors.gray.light};
