@@ -18,13 +18,6 @@ Ce dépôt contient les sources du site web de [Trackdéchets](https://trackdech
 Le site est automatiquement déployée comme une page GitHub (branche `gh-pages`) lorsqu'un nouveau commit est poussé sur la branche `master`.
 Ce déploiement est effectué via une [action GitHub](./.github/workflows/deploy.yml).
 
-Il est également possible de déployer manuellement avec les commandes suivantes :
-
-```
-npm run build
-npm run deploy
-```
-
 ## Modifier les CGU
 
 Les CGU sont rédigées en markdown dans le fichier `src/markdown-pages/cgu.md`.
