@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/cgu.tsx"],"names":["PageCGU"],"mappings":"2FAAA,2EAGe,SAASA,IACtB,OAAO,gBAAC,IAAD","file":"component---src-pages-cgu-tsx-1a00e2f98eb92fbae01f.js","sourcesContent":["import * as React from \"react\";\nimport { CGU } from \"../components/pages\";\n\nexport default function PageCGU() {\n  return <CGU />;\n}\n"],"sourceRoot":""}
