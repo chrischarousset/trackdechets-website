@@ -18,7 +18,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: path.join(__dirname, "src", "markdown-pages"),
+        path: path.join(__dirname, "content", "pages"),
       },
     },
     `gatsby-transformer-remark`,
@@ -26,7 +26,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `partners-logos`,
-        path: path.join(__dirname, "static", "images", "partners"),
+        path: path.join(__dirname, "content", "partners"),
       },
     },
   ],
