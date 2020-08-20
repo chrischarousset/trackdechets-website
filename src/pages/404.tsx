@@ -25,7 +25,7 @@ export default function Page404({ location }: PageProps) {
     if (
       APP_PATHS.some((path) => location.pathname.startsWith(withPrefix(path)))
     ) {
-      const currentOriginWithPrefix = new URL(withPrefix(""), location.origin)
+      const currentOriginWithPrefix = new URL(withPrefix("/"), location.origin)
         .href;
       const currentPathWithoutPrefix = location.href.replace(
         currentOriginWithPrefix,
