@@ -6,7 +6,7 @@ import { InlineList, InlineListItem } from "./List";
 import { Link } from "./Link";
 import { Button } from "./Button";
 import trackdechets from "./assets/trackdechets.png";
-import mtes from "./assets/mtes.svg";
+import mte from "./assets/mte.svg";
 
 const HeaderContainer = styled.header`
   padding: ${(props) => props.theme.spacing(1)} 0;
@@ -18,8 +18,12 @@ const HeaderInnerContainer = styled.div`
   padding: 0 ${(props) => props.theme.spacing(2)};
 `;
 const HeaderLogos = styled.div`
-  white-space: nowrap;
-  padding-right: ${(props) => props.theme.spacing(2)};
+  display: flex;
+  align-items: center;
+
+  > * {
+    margin-right: ${(props) => props.theme.spacing(2)};
+  }
 
   @media ${(props) => props.theme.breakpoints.up("medium")} {
     flex: 1;
@@ -64,8 +68,8 @@ export function Header() {
       <HeaderInnerContainer>
         <HeaderLogos>
           <img
-            src={mtes}
-            alt="Ministère de la Transition Écologique et Solidaire"
+            src={mte}
+            alt="Ministère de la Transition Écologique"
             width="80"
           />
           <Link as={RouterLink} to="/">

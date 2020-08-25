@@ -4,6 +4,7 @@ import { NotFound } from "../components/pages";
 
 const APP_ORIGIN = "https://trackdechets.beta.gouv.fr";
 const APP_PATHS = [
+  "/oauth2",
   "/login",
   "/signup",
   "/reset-password",
