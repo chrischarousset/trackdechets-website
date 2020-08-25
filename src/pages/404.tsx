@@ -2,7 +2,7 @@ import * as React from "react";
 import { PageProps, withPrefix } from "gatsby";
 import { NotFound } from "../components/pages";
 
-const APP_ORIGIN = "https://trackdechets.beta.gouv.fr";
+const APP_ORIGIN = "https://app.trackdechets.beta.gouv.fr";
 const APP_PATHS = [
   "/oauth2",
   "/login",

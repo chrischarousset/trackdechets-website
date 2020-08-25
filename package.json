@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "start": "gatsby develop"
   },
   "dependencies": {
