@@ -12,7 +12,7 @@ Trackdéchets.béta.gouv.fr, ci-après le service, a pour objet de faciliter et 
 
 Le présent document a pour objet de régler les relations entre les différents intervenants de ce service.
 
-Le service est développé et opéré par la Fabrique Numérique du Ministère de la Transition Écologique et Solidaire et du Ministère de la cohésion des territoires et des relations avec les collectivités territoriales, membre du réseau d’incubateurs [beta.gouv.fr](https://www.google.com/url?q=http://beta.gouv.fr/&sa=D&ust=1553532239086000)
+Le service est développé et opéré par la Fabrique Numérique du Ministère de la Transition Écologique et Solidaire et du Ministère de la cohésion des territoires et des relations avec les collectivités territoriales, membre du réseau d’incubateurs [beta.gouv.fr](http://beta.gouv.fr/)
 
 Toute utilisation du service est subordonnée à l'acceptation préalable et au respect intégral des présentes conditions générales d’utilisation (CGU).
 
@@ -50,9 +50,9 @@ L’administrateur du site se réserve le droit de supprimer un compte non sinc�
 
 Les sources de données utilisables sont notamment (liste non exhaustive)
 
-- ​[FranceConnect](https://www.google.com/url?q=https://franceconnect.gouv.fr/&sa=D&ust=1553532239092000)​
-- ​[Base d’adresse nationale](https://www.google.com/url?q=https://adresse.data.gouv.fr/&sa=D&ust=1553532239093000) ​
-- ​[API entreprise](https://www.google.com/url?q=https://api.gouv.fr/api/api-entreprise.html&sa=D&ust=1553532239093000)​
+- ​[FranceConnect](https://franceconnect.gouv.fr/)​
+- ​[Base d’adresse nationale](https://adresse.data.gouv.fr/) ​
+- ​[API entreprise](https://api.gouv.fr/api/api-entreprise.html)​
 - Base des installations classées
 - IREP / GEREP
 
