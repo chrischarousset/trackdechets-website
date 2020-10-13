@@ -40,7 +40,7 @@ export function Stats() {
           <Grid items={1}>
             <GridItem>
               <iframe
-                src="https://metabase.trackdechets.beta.gouv.fr/public/question/82437964-44ee-43ae-8267-a5b521e815b4"
+                src="https://analytics.trackdechets.beta.gouv.fr/public/question/7d4e0e4b-d86a-46ae-b3df-20912b75b6ab"
                 frameBorder="0"
                 width="800"
                 height="400"
@@ -52,7 +52,7 @@ export function Stats() {
           <Grid items={3}>
             <GridItem>
               <iframe
-                src="https://metabase.trackdechets.beta.gouv.fr/public/question/fa7e2315-bbae-4cf6-ae0f-34cf4821c226"
+                src="https://analytics.trackdechets.beta.gouv.fr/public/question/09d175d6-8b38-42f4-9097-dc753d360217"
                 frameBorder="0"
                 width="350"
                 height="250"
@@ -61,7 +61,7 @@ export function Stats() {
             </GridItem>
             <GridItem>
               <iframe
-                src="https://metabase.trackdechets.beta.gouv.fr/public/question/f72b7a7a-3f75-4a46-839d-bffce3b87409"
+                src="https://analytics.trackdechets.beta.gouv.fr/public/question/73664387-3c43-4b38-8b16-4d1d7f71a50c"
                 frameBorder="0"
                 width="350"
                 height="250"
@@ -70,7 +70,7 @@ export function Stats() {
             </GridItem>
             <GridItem>
               <iframe
-                src="https://metabase.trackdechets.beta.gouv.fr/public/question/657c9d7f-404f-40a2-9a74-fc808ceae95f"
+                src="https://analytics.trackdechets.beta.gouv.fr/public/question/750cfc72-6549-48f0-9483-5c9d449d60b1"
                 frameBorder="0"
                 width="350"
                 height="250"
@@ -88,7 +88,7 @@ export function Stats() {
           <Grid items={2}>
             <GridItem>
               <iframe
-                src="https://metabase.trackdechets.beta.gouv.fr/public/question/fc1df57e-d1c8-4150-a113-1f7bba5c1764"
+                src="https://analytics.trackdechets.beta.gouv.fr/public/question/312b9159-cab7-4a6e-90ff-de04287f4d8a"
                 frameBorder="0"
                 width="700"
                 height="400"
@@ -97,7 +97,7 @@ export function Stats() {
             </GridItem>
             <GridItem>
               <iframe
-                src="https://metabase.trackdechets.beta.gouv.fr/public/question/d0ac5b40-b35e-4fa6-94f5-3b586ad8e349"
+                src="https://analytics.trackdechets.beta.gouv.fr/public/question/7fc8a525-95c3-48e0-becb-6bb5668a2868"
                 frameBorder="0"
                 width="350"
                 height="400"
@@ -115,7 +115,7 @@ export function Stats() {
           <Grid items={2}>
             <GridItem>
               <iframe
-                src="https://metabase.trackdechets.beta.gouv.fr/public/question/15cf54b7-28a4-4099-b033-111341937d77"
+                src="https://analytics.trackdechets.beta.gouv.fr/public/question/4eb75bba-f3fe-4617-9038-9eec6b0e1d51"
                 frameBorder="0"
                 width="350"
                 height="250"
@@ -124,7 +124,7 @@ export function Stats() {
             </GridItem>
             <GridItem>
               <iframe
-                src="https://metabase.trackdechets.beta.gouv.fr/public/question/774a988a-039c-4bd0-b74a-54f5dcf251cc"
+                src="https://analytics.trackdechets.beta.gouv.fr/public/question/b8497611-62b7-4cd5-a82e-fbcbf6348ee2"
                 frameBorder="0"
                 width="350"
                 height="250"
