@@ -30,7 +30,9 @@ Un résumé de la syntaxe markdown est disponible ici : [https://guides.github.c
 ## Ajouter un partenaire
 
 Pour ajouter un partenaire, il suffit d'ajouter le logo dans le répertoire `content/partners`.
+
 Il peut être nécessaire de redimmensionner le logo afin de l'équilibrer par rapport aux autres.
+Les logos font entre 180 et 220 pixels de largeur, en cas de doute commencez par 200.
 
 Il est possible d'uploader un logo directement sur GitHub :
 
