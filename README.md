@@ -5,6 +5,7 @@ Ce dépôt contient les sources du site web de [Trackdéchets](https://trackdech
 - [Installation](#installation)
 - [Déploiement](#deploiement)
 - [Modifier les CGU](#modifier-les-cgu)
+- [Modifier la politique de confidentialité](#modifier-la-politique-de-confidentialite)
 - [Ajouter un partenaire](#ajouter-un-partenaire)
 
 ## Installation
@@ -26,6 +27,13 @@ Il est possible de les éditer directement sur GitHub :
 - [Éditer le fichier `content/pages/cgu.md`](https://github.com/MTES-MCT/trackdechets-website/edit/master/content/pages/cgu.md)
 
 Un résumé de la syntaxe markdown est disponible ici : [https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## Modifier la politique de confidentialité
+
+Pour mettre à jour la politique de confidentialité, il faut remplacer le fichier pdf `static/politique-de-confidentialite.pdf`.
+Il est donc important que votre fichier porte exactement le même nom.
+
+- [Uploader le fichier pdf dans `static`](https://github.com/MTES-MCT/trackdechets-website/upload/master/static)
 
 ## Ajouter un partenaire
 
