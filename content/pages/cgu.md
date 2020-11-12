@@ -1,3 +1,7 @@
+---
+url: "/cgu"
+---
+
 # Conditions Générales d’Utilisation de Trackdéchets
 
 Les présentes conditions générales d’utilisation (dites « CGU ») fixent le cadre juridique de la Plateforme “TrackDéchets” et définissent les conditions d’accès et d’utilisation des services par l’Utilisateur.
@@ -25,7 +29,7 @@ La création du profil est gratuite et est ouverte à plusieurs types de profils
 
 - producteur de déchets,
 - professionnel de la gestion de déchets (collecteurs, installations de tri-transit-regroupement, installation de traitement)
-transporteurs de déchets. 
+  transporteurs de déchets.
 - éco-organisme
 - courtiers et négociants
 
@@ -49,23 +53,24 @@ Le titulaire du compte administrateur dispose notamment des fonctionnalités sui
 - de visualiser le registre des déchets dangereux ;
 - de vérifier un prestataire en consultant sa fiche entreprise;
 - de demander une aide en ligne ;
-- d'accéder à un tableau de bord récapitulatif  ;
+- d'accéder à un tableau de bord récapitulatif ;
 - d’inviter des membres à rejoindre l’établissement et de définir leurs droits ;
 - de gérer les paramètres de l’entreprise, notamment les données publiques et privées liées à l’établissement (fiche entreprise, nom usuel, identifiant GEREP, renouvellement du code de sécurité.)
 
 ### Édition d’un bordereau en ligne
 
 Après connexion, l’utilisateur est dirigé vers le tableau comportant les bordereaux le concernant (si des bordereaux le concernant ont été édités). Le tableau permet de chercher, trier et vérifier l’état des bordereaux.
-L’onglet “Créer un bordereau” permet la création d’un bordereau en mode brouillon. La création du bordereau nécessite de remplir les mêmes champs qu’un bordereau modèle Cerfa 12571*01 pour les cases 1 à 9.
+L’onglet “Créer un bordereau” permet la création d’un bordereau en mode brouillon. La création du bordereau nécessite de remplir les mêmes champs qu’un bordereau modèle Cerfa 12571\*01 pour les cases 1 à 9.
 Le service permet de conserver des favoris permettant un remplissage facilité des bordereaux suivants ayant des similitudes (destinataires, déchets, transports etc). Il permet au producteur de s’assurer qu’il utilise le bon code de nomenclature de son déchet.
 Lorsque ce bordereau est rempli, il apparaît dans les bordereaux en brouillon.
 
 Lors du départ du déchet vers l’installation de collecte ou de traitement (à l’enlèvement), il est nécessaire que les 2 parties prenantes valident ledit bordereau afin :
+
 - d'acter l'enlèvement effectif approuvé par le producteur et le transporteur;
 - transférer ce bordereau en attente chez le prestataire ;
 - suivre le statut du bordereau.
 
-La validation consiste à confirmer le nom et la date du départ du déchet. Cliquer sur “Je Valide”,  équivaut à valider les informations et apposer sa signature.
+La validation consiste à confirmer le nom et la date du départ du déchet. Cliquer sur “Je Valide”, équivaut à valider les informations et apposer sa signature.
 
 À noter : afin de mieux coller à la réalité du terrain (les utilisateurs producteurs n’ont pas tous un ordinateur ou un téléphone sous la main), il est également possible que le producteur signe sur le compte du transporteur, sur son outil. Afin de sécuriser qu’il est bien habilité à le faire, le producteur doit saisir le code de sécurité de son établissement qui confirme la signature.
 
@@ -112,4 +117,5 @@ L’Utilisateur s’engage à ne pas mettre en ligne de contenus ou informations
 Le contenu de l’Utilisateur peut être à tout moment et pour n’importe quelle raison supprimé ou modifié par le site, sans préavis.
 
 # Article 6 - Mise à jour des conditions d’utilisation
+
 Les termes des présentes conditions d’utilisation peuvent être amendés à tout moment, sans préavis, en fonction des modifications apportées à la plateforme, de l’évolution de la législation ou pour tout autre motif jugé nécessaire.
