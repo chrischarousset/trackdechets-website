@@ -30,7 +30,14 @@ Un résumé de la syntaxe markdown est disponible ici : [https://guides.github.c
 
 ## Modifier la politique de confidentialité
 
-Pour mettre à jour la politique de confidentialité, il faut remplacer le fichier pdf `static/politique-de-confidentialite.pdf`.
+Pour mettre à jour la politique de confidentialité, il faut remplacer le fichier pdf `politique-de-confidentialite.pdf` situé dans le répertoire `static`.
+Il est donc important que votre fichier porte exactement le même nom.
+
+- [Uploader le fichier pdf dans `static`](https://github.com/MTES-MCT/trackdechets-website/upload/master/static)
+
+## Modifier les mentions légales
+
+Pour mettre à jour les mentions légales, il faut remplacer le fichier pdf `mentions-legales.pdf` situé dans le répertoire `static`.
 Il est donc important que votre fichier porte exactement le même nom.
 
 - [Uploader le fichier pdf dans `static`](https://github.com/MTES-MCT/trackdechets-website/upload/master/static)

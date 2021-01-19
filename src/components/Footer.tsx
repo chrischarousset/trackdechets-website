@@ -91,6 +91,11 @@ export function Footer() {
               </FooterLink>
             </UnstyledListItem>
             <UnstyledListItem>
+              <FooterLink href="/mentions-legales.pdf">
+                Mentions légales
+              </FooterLink>
+            </UnstyledListItem>
+            <UnstyledListItem>
               <FooterLink as={RouterLink} to="/stats">
                 Statistiques
               </FooterLink>
