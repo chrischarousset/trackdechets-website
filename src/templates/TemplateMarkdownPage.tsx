@@ -1,15 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { graphql } from "gatsby";
-import {
-  Header,
-  Layout,
-  Footer,
-  Container,
-  Section,
-  HASTRoot,
-  HASTNode,
-} from "../components";
+import { Layout, Container, Section, HASTRoot, HASTNode } from "../components";
 
 const TemplateMarkdownPageContainer = styled(Section)`
   h1 {
@@ -44,15 +36,11 @@ export default function TemplateMarkdownPage({
 }: TemplateMarkdownPageProps) {
   return (
     <Layout>
-      <Header />
-
       <TemplateMarkdownPageContainer>
         <Container>
           <HASTNode node={htmlAst} />
         </Container>
       </TemplateMarkdownPageContainer>
-
-      <Footer />
     </Layout>
   );
 }

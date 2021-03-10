@@ -1,9 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
 import { Layout } from "../Layout";
-import { Header } from "../Header";
-import { Footer } from "../Footer";
-import { Typography } from "../Typography";
 import { Container } from "../Container";
 import { Section, SectionHeading } from "../Section";
 
@@ -29,8 +26,6 @@ const GridItem = styled.div`
 export function Stats() {
   return (
     <Layout>
-      <Header />
-
       <Container>
         <Section>
           <SectionHeading>
@@ -134,8 +129,6 @@ export function Stats() {
           </Grid>
         </Section>
       </Container>
-
-      <Footer />
     </Layout>
   );
 }

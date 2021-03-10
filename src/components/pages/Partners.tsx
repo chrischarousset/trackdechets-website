@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Header } from "../Header";
 import { Layout } from "../Layout";
-import { Footer } from "../Footer";
 import { Container } from "../Container";
 import { Typography } from "../Typography";
 import { Button } from "../Button";
@@ -50,7 +48,6 @@ interface PartnersProps {
 export function Partners({ logos }: PartnersProps) {
   return (
     <Layout>
-      <Header />
       <Section>
         <Container>
           <Typography as="h1" variant="h1" gutterBottom>
@@ -159,7 +156,6 @@ export function Partners({ logos }: PartnersProps) {
           </ContactButtonContainer>
         </Container>
       </Section>
-      <Footer />
     </Layout>
   );
 }
