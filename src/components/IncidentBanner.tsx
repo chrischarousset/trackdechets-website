@@ -24,11 +24,11 @@ export function IncidentBanner() {
     },
   } = useStaticQuery(query);
 
-  if (incident == null) {
-    return null;
+  if (incident) {
+    return (
+      <IncidentBannerContainer dangerouslySetInnerHTML={{ __html: incident }} />
+    );
   }
 
-  return (
-    <IncidentBannerContainer dangerouslySetInnerHTML={{ __html: incident }} />
-  );
+  return null;
 }

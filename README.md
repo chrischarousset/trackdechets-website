@@ -7,6 +7,7 @@ Ce dépôt contient les sources du site web de [Trackdéchets](https://trackdech
 - [Modifier les CGU](#modifier-les-cgu)
 - [Modifier la politique de confidentialité](#modifier-la-politique-de-confidentialite)
 - [Ajouter un partenaire](#ajouter-un-partenaire)
+- [Ajouter une bannière d'incident](#ajouter-une-bannière-d-incident)
 
 ## Installation
 
@@ -52,6 +53,14 @@ Les logos font entre 180 et 220 pixels de largeur, en cas de doute commencez par
 Il est possible d'uploader un logo directement sur GitHub :
 
 - [Uploader un logo dans `content/partners`](https://github.com/MTES-MCT/trackdechets-website/upload/master/content/partners)
+
+## Ajouter une bannière d'incident
+
+En cas d'incident, il est possible d'ajouter une bannière sur toutes les pages pour informer les utilisateurs.
+Pour ce faire, il faut modifier la propriété `siteMetadata.incident` dans le fichier `gatsby-config.js`.
+
+Cette propriété peut contenir du HTML, par exemple pour ajouter un lien pointant vers une page externe.
+Définir cette propriété comme une chaîne de caractère vide aura pour conséquence de ne pas afficher la bannière.
 
 ## LICENCE
 

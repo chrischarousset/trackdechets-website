@@ -10,8 +10,11 @@ module.exports = {
     description:
       "Trackdéchets a vocation à simplifier la gestion de vos déchets dangereux au quotidien : 0 papier, traçabilité en temps réel, informations regroupées sur un outil unique, vérification des prestataires.",
     url: siteUrl,
-    incident:
-      "L'API et l'application cliente Trackdéchets sont actuellement indisponibles suite à un incident majeur chez notre hébergeur OVH. Nous faisons tout notre possible pour rétablir la situation au plus vite.",
+
+    // Filling the following will add a banner on top of every pages
+    // to inform users about an ongoing incident.
+    // Note that it can contain HTML and must be set to an empty string when there is no incident.
+    incident: "",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
