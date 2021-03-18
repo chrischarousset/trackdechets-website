@@ -142,12 +142,12 @@ export function Partners({ logos }: PartnersProps) {
                   dématérialisés sur une chaîne de test.
                 </ListItem>
               </List>
-              <Typography variant="emphasis">
-                Dans tous les cas, pour être partenaire de Trackdéchets, des
-                bordereaux dématérialisés doivent circuler&nbsp;!
-              </Typography>
             </div>
           </BecomePartnerQuestions>
+          <Typography variant="emphasis" centered>
+            Dans tous les cas, pour être partenaire de Trackdéchets, des
+            bordereaux dématérialisés doivent circuler&nbsp;!
+          </Typography>
         </Container>
       </Section>
 
