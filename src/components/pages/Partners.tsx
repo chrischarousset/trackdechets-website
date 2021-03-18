@@ -50,7 +50,19 @@ export function Partners({ logos }: PartnersProps) {
     <Layout>
       <Section>
         <Container>
-          <Typography as="h1" variant="h1" gutterBottom>
+          <SectionHeading>Nos partenaires actuels</SectionHeading>
+          <PartnersLogos>
+            {logos.map(({ name, publicURL }, index) => (
+              <PartnersLogosItem key={index}>
+                <img src={publicURL} alt={name} />
+              </PartnersLogosItem>
+            ))}
+          </PartnersLogos>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <Typography as="h1" variant="h1" gutterBottom centered>
             Le Partenariat avec Trackdéchets
           </Typography>
           <Typography gutterBottom>
@@ -80,67 +92,65 @@ export function Partners({ logos }: PartnersProps) {
           <BecomePartnerQuestions>
             <div>
               <Typography variant="h3" gutterBottom>
-                Quels engagements ?
+                Pourquoi devenir partenaire ?
               </Typography>
               <List>
                 <ListItem>
-                  La chaine des BSD que vous gérez est 100% dématérialisée.
+                  Vous serez mis en visibilité à travers les diverses
+                  communications de Trackdéchets (page partenaires, newsletter,
+                  présentations, réseaux sociaux)
                 </ListItem>
                 <ListItem>
-                  Votre outil de gestion des BSD (ERP, etc.) est connecté à
-                  l'API de Trackdéchets.
+                  Vous pourrez bénéficier d’un accompagnement dédié par l’équipe
+                  de Trackdéchets afin de déployer facilement la plateforme à
+                  votre réseau (clients, prestataires, partenaires).
                 </ListItem>
                 <ListItem>
-                  Vous invitez vos clients et partenaires à devenir utilisateurs
-                  de Trackdéchets, en utilisant les supports et documents mis à
-                  votre disposition.
-                </ListItem>
-                <ListItem>
-                  Vous vérifiez et validez les données de la "fiche entreprise".
+                  Vous pourrez participer à des ateliers exclusifs sur le
+                  produit à travers notre comité produit restreint.
                 </ListItem>
               </List>
             </div>
 
             <div>
               <Typography variant="h3" gutterBottom>
-                Quels bénéfices ?
+                Quels engagements ?
+              </Typography>
+              <Typography variant="h4" gutterBottom>
+                Vous avez un ERP/ SaaS, vous allez utiliser utilisez
+                Trackdéchets par API&nbsp;?
               </Typography>
               <List>
                 <ListItem>
-                  Mise en visibilité lors des diverses communication
-                  Trackdéchets (newsletter, présentations) et via le
-                  référencement sur le site Trackdéchets via la page
-                  "Partenaires".
+                  Votre outil doit être connecté à l’API Trackdéchets.
                 </ListItem>
                 <ListItem>
-                  Appui de la DGPR pendant la phase de transition (contrôle
-                  routiers des BSD).
-                </ListItem>
-                <ListItem>
-                  Participation à des ateliers exclusifs sur le produit à
-                  travers notre comité produit restreint.
-                </ListItem>
-                <ListItem>
-                  Accès à des informations privilégiées sur l'avancement et les
-                  évolutions autour du produit.
+                  Vous devez avoir démarré la phase pilote avec des partenaires
+                  de test.
                 </ListItem>
               </List>
+              <Typography variant="h4" gutterBottom>
+                Vous utilisez Trackdéchets en propre, par l’interface ?
+              </Typography>
+              <List>
+                <ListItem>
+                  Vous devez avoir informé les acteurs (clients, prestataires)
+                  sur vos chaînes de traçabilité.
+                </ListItem>
+                <ListItem>
+                  Vous devez avoir commencé à faire circuler des BSD
+                  dématérialisés sur une chaîne de test.
+                </ListItem>
+              </List>
+              <Typography variant="emphasis">
+                Dans tous les cas, pour être partenaire de Trackdéchets, des
+                bordereaux dématérialisés doivent circuler&nbsp;!
+              </Typography>
             </div>
           </BecomePartnerQuestions>
         </Container>
       </Section>
-      <Section>
-        <Container>
-          <SectionHeading>Nos partenaires actuels</SectionHeading>
-          <PartnersLogos>
-            {logos.map(({ name, publicURL }, index) => (
-              <PartnersLogosItem key={index}>
-                <img src={publicURL} alt={name} />
-              </PartnersLogosItem>
-            ))}
-          </PartnersLogos>
-        </Container>
-      </Section>
+
       <Section>
         <Container>
           <SectionHeading>Envie de devenir partenaire ?</SectionHeading>

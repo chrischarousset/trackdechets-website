@@ -16,6 +16,7 @@ export const Section = styled.section`
 export const SectionHeading = styled(Typography).attrs({
   as: "h2",
   variant: "h2",
+  centered: true,
 })`
   margin-bottom: ${(props) => props.theme.spacing(6)};
 `;

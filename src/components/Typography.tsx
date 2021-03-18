@@ -1,11 +1,14 @@
 import styled, { css } from "styled-components";
 
 export const Typography = styled.p<{
-  variant?: "h1" | "h2" | "h3" | "body1" | "body2";
+  variant?: "h1" | "h2" | "h3" | "h4" | "body1" | "body2" | "emphasis";
   gutterBottom?: boolean;
+  centered?: boolean;
   color?: "inherit" | "muted";
 }>`
   margin: 0 0 ${(props) => (props.gutterBottom ? props.theme.spacing(1) : 0)} 0;
+
+  text-align: ${(props) => (props.centered ? "center" : "left")};
 
   ${(props) => {
     switch (props.color) {
@@ -20,7 +23,6 @@ export const Typography = styled.p<{
         `;
     }
   }}
-
   ${(props) => {
     switch (props.variant) {
       case "h1":
@@ -43,6 +45,20 @@ export const Typography = styled.p<{
           line-height: ${props.theme.typography.h3.lineHeight};
           font-weight: ${props.theme.typography.h3.fontWeight};
         `;
+      case "h4":
+        return css`
+          font-size: ${props.theme.typography.h4.fontSize};
+          line-height: ${props.theme.typography.h4.lineHeight};
+          font-weight: ${props.theme.typography.h4.fontWeight};
+          margin-top: ${props.theme.typography.h4.marginTop};
+        `;
+      case "emphasis":
+        return css`
+          font-size: ${props.theme.typography.emphasis.fontSize};
+          line-height: ${props.theme.typography.emphasis.lineHeight};
+          font-style: ${props.theme.typography.emphasis.fontStyle};
+          margin-top: ${props.theme.typography.emphasis.marginTop};
+        `;
       case "body1":
         return css`
           font-size: ${props.theme.typography.body1.fontSize};
@@ -55,5 +71,5 @@ export const Typography = styled.p<{
           line-height: ${props.theme.typography.body2.lineHeight};
         `;
     }
-  }}
+  }};
 `;

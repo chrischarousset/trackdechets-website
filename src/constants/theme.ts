@@ -21,6 +21,12 @@ export const theme: DefaultTheme = {
       lineHeight: "1.6",
       fontWeight: "normal",
     },
+    h4: {
+      fontSize: "1rem",
+      lineHeight: "1.5",
+      fontWeight: "bold",
+      marginTop: "1rem",
+    },
     body1: {
       fontSize: "1.25rem",
       lineHeight: "1.6",
@@ -28,6 +34,12 @@ export const theme: DefaultTheme = {
     body2: {
       fontSize: "1rem",
       lineHeight: "1.6",
+    },
+    emphasis: {
+      fontSize: "1rem",
+      lineHeight: "1.6",
+      fontStyle: "italic",
+      marginTop: "1rem",
     },
   },
   colors: {

@@ -18,6 +18,12 @@ declare module "styled-components" {
         lineHeight: string;
         fontWeight: string;
       };
+      h4: {
+        fontSize: string;
+        lineHeight: string;
+        fontWeight: string;
+        marginTop: string;
+      };
       body1: {
         fontSize: string;
         lineHeight: string;
@@ -25,6 +31,12 @@ declare module "styled-components" {
       body2: {
         fontSize: string;
         lineHeight: string;
+      };
+      emphasis: {
+        fontSize: string;
+        lineHeight: string;
+        fontStyle: string;
+        marginTop: string;
       };
     };
     colors: {
