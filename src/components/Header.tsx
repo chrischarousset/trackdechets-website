@@ -79,8 +79,8 @@ export function Header() {
         <HeaderNav>
           <InlineList>
             <InlineListItem>
-              <HeaderNavLink href="https://faq.trackdechets.fr/">
-                Foire aux questions
+              <HeaderNavLink as={RouterLink} to="/resources">
+                Ressources
               </HeaderNavLink>
             </InlineListItem>
             <InlineListItem>

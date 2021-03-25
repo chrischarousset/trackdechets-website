@@ -17,8 +17,6 @@ const ModalInnerContainer = styled.div`
   max-width: 40rem;
   margin: 0 auto;
   padding: ${(props) => props.theme.spacing(4)};
-  background-color: ${(props) => props.theme.colors.common.white};
-  border-radius: 4px;
 `;
 
 interface ModalProps {
