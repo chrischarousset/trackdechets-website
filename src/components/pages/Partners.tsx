@@ -117,8 +117,7 @@ export function Partners({ logos }: PartnersProps) {
                 Quels engagements ?
               </Typography>
               <Typography variant="h4" gutterBottom>
-                Vous avez un ERP/ SaaS, vous allez utiliser utilisez
-                Trackdéchets par API&nbsp;?
+                Vous avez un ERP/ SaaS, vous allez utiliser Trackdéchets par API&nbsp;?
               </Typography>
               <List>
                 <ListItem>
