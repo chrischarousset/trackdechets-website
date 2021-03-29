@@ -7,7 +7,7 @@ import { Section } from "../../Section";
 import illustrationHero from "./assets/illustrationHero.png";
 
 const HeroContainer = styled.div`
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     background-image: linear-gradient(
       90deg,
       transparent 50%,
@@ -21,7 +21,7 @@ const HeroInnerContainer = styled(Container)`
   align-items: center;
   text-align: center;
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     text-align: left;
     flex-direction: row-reverse;
   }
@@ -33,14 +33,14 @@ const HeroContent = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     padding-right: ${(props) => props.theme.spacing(1)};
   }
 `;
 const HeroHeading = styled(Typography).attrs({ as: "h1", variant: "h1" })`
   margin-bottom: ${(props) => props.theme.spacing(4)};
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     margin-bottom: ${(props) => props.theme.spacing(12)};
   }
 `;
@@ -50,7 +50,7 @@ const HeroIllustration = styled.div`
   background-color: ${(props) => props.theme.colors.gray.light};
   margin-bottom: ${(props) => props.theme.spacing(2)};
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     margin-bottom: 0;
   }
 

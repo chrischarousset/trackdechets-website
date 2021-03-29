@@ -1,7 +1,10 @@
 import { DefaultTheme } from "styled-components";
 
 const breakpoints = {
-  medium: "60rem",
+  small: "37.5rem", //600
+  medium: "48rem", //772
+  large: "62rem", //992
+  extraLarge: "75rem", //1200
 };
 
 export const theme: DefaultTheme = {
@@ -44,19 +47,19 @@ export const theme: DefaultTheme = {
   },
   colors: {
     common: {
-      focus: "#549bfe",
+      focus: "#549BFE",
       black: "#060606",
-      white: "#fff",
+      white: "#FFFFFF",
     },
     primary: {
-      contrastText: "#fff",
+      contrastText: "#FFFFFF",
       dark: "#000075",
       main: "#000092",
     },
     secondary: {
-      contrastText: "#fff",
-      dark: "#cb0005",
-      main: "#e20007",
+      contrastText: "#FFFFFF",
+      dark: "#CB0005",
+      main: "#E20007",
     },
     text: {
       main: "#1E1E1E",
@@ -70,6 +73,7 @@ export const theme: DefaultTheme = {
   },
   spacing: (unit: number) => `${unit * 0.5}rem`,
   breakpoints: {
-    up: (size: "medium") => `(min-width: ${breakpoints[size]})`,
+    up: (size: "large") => `(min-width: ${breakpoints[size]})`,
+    down: (size: "large") => `(max-width: ${breakpoints[size]})`,
   },
 };

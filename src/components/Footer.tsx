@@ -13,7 +13,7 @@ const FooterContainer = styled.footer`
   background-color: ${(props) => props.theme.colors.common.black};
 `;
 const FooterInnerContainer = styled(Container)`
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     display: flex;
     align-items: center;
   }
@@ -29,7 +29,7 @@ const FooterSummary = styled.div`
   align-items: center;
   margin-bottom: ${(props) => props.theme.spacing(2)};
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     margin-bottom: 0;
   }
 `;

@@ -12,7 +12,7 @@ const BecomePartnerQuestions = styled.div`
   grid-template-columns: repeat(1, 1fr);
   grid-gap: ${(props) => props.theme.spacing(8)};
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     grid-template-columns: repeat(2, 1fr);
   }
 `;
@@ -22,7 +22,7 @@ const PartnersLogos = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: ${(props) => props.theme.spacing(4)};
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     grid-template-columns: repeat(5, 1fr);
   }
 `;
@@ -117,7 +117,8 @@ export function Partners({ logos }: PartnersProps) {
                 Quels engagements ?
               </Typography>
               <Typography variant="h4" gutterBottom>
-                Vous avez un ERP/ SaaS, vous allez utiliser Trackdéchets par API&nbsp;?
+                Vous avez un ERP/ SaaS, vous allez utiliser Trackdéchets par
+                API&nbsp;?
               </Typography>
               <List>
                 <ListItem>

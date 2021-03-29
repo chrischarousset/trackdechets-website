@@ -67,7 +67,8 @@ declare module "styled-components" {
     };
     spacing: (unit: number) => string;
     breakpoints: {
-      up: (size: "medium") => string;
+      up: (size: ["small", "medium", "large", "extraLarge"]) => string;
+      down: (size: ["small", "medium", "large", "extraLarge"]) => string;
     };
   }
 }

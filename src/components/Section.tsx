@@ -4,7 +4,7 @@ import { Typography } from "./Typography";
 export const Section = styled.section`
   padding: ${(props) => props.theme.spacing(6)} 0;
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     padding: ${(props) => props.theme.spacing(12)} 0;
   }
 

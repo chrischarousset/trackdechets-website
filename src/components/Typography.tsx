@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Typography = styled.p<{
+  bold?;
   variant?: "h1" | "h2" | "h3" | "h4" | "body1" | "body2" | "emphasis";
   gutterBottom?: boolean;
   centered?: boolean;
@@ -9,6 +10,12 @@ export const Typography = styled.p<{
   margin: 0 0 ${(props) => (props.gutterBottom ? props.theme.spacing(1) : 0)} 0;
 
   text-align: ${(props) => (props.centered ? "center" : "left")};
+
+  ${(props) =>
+    props.bold &&
+    css`
+      font-weight: bold;
+    `}
 
   ${(props) => {
     switch (props.color) {

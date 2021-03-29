@@ -11,7 +11,7 @@ const FAQQuestions = styled.div`
   grid-template-columns: repeat(1, 1fr);
   grid-gap: ${(props) => props.theme.spacing(8)};
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     grid-template-columns: repeat(2, 1fr);
   }
 `;

@@ -13,7 +13,7 @@ const Grid = styled.div<{ items: number }>`
     margin-top: ${(props) => props.theme.spacing(2)};
   }
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     grid-template-columns: repeat(${(props) => props.items}, 1fr);
   }
 `;

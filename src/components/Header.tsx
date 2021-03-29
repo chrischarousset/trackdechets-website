@@ -25,7 +25,7 @@ const HeaderLogos = styled.div`
     margin-right: ${(props) => props.theme.spacing(2)};
   }
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     flex: 1;
   }
 `;
@@ -38,7 +38,7 @@ const HeaderNav = styled.nav`
     }
   }
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     display: flex;
     align-items: center;
 

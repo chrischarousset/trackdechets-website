@@ -14,7 +14,7 @@ const BadgesInnerContainer = styled(Container)`
   flex-direction: column;
   align-items: center;
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
@@ -33,7 +33,7 @@ const BadgeItem = styled.div`
     margin-bottom: 0;
   }
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     margin-bottom: 0;
   }
 `;

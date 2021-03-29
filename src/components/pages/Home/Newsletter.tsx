@@ -18,8 +18,18 @@ export function Newsletter() {
       {isOpen && (
         <Modal onClose={() => setIsOpen(false)}>
           <iframe
-            src="https://app.mailjet.com/widget/iframe/3F7D/EA4"
-            style={{ border: 0, width: "100%", height: "400px" }}
+            src="https://0806de2d.sibforms.com/serve/MUIEAHIcZ4oB1dfXYhFNGM7yQk5C6WI7VeAg_3aHo1MLi16FEHfRbmqgqRT68gHZD0mupU4fgkJVq3HMjvVLBG1nwXwzWXItN1pmPvqibXfGkgarq9LolotXzLkfR46tOV5TtPf6FczlEac50NZEoM4s1ZhZUYpAItIwxWuITpAQT222iKZRLO0uzXMY2RmjNC9SFQdEDoyPrGKx"
+            frameBorder="0"
+            scrolling="auto"
+            allowFullScreen
+            style={{
+              width: "540px",
+              height: "700px",
+              display: "block",
+              marginLeft: "auto",
+              marginRight: "auto",
+              maxWidth: "100%",
+            }}
           />
         </Modal>
       )}

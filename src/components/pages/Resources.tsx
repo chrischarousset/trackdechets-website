@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Layout } from "../Layout";
 import { Container } from "../Container";
 import { Typography } from "../Typography";
@@ -9,7 +9,7 @@ import notification from "../assets/resources-notification.svg";
 import questionMark from "../assets/resources-question.svg";
 import media from "../assets/resources-media-setting.svg";
 import mail from "../assets/mail-line.svg";
-import styles from "./resources.module.css";
+import mailBlue from "../assets/mail-line-blue.svg";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { Modal } from "../Modal";
@@ -20,19 +20,8 @@ const Halved = styled.div`
   grid-gap: ${(props) => props.theme.spacing(4)};
   margin-top: 2rem;
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     grid-template-columns: repeat(2, 1fr);
-  }
-`;
-
-const Quarter = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: ${(props) => props.theme.spacing(4)};
-  margin-top: 2rem;
-
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
-    grid-template-columns: repeat(4, 1fr);
   }
 `;
 
@@ -42,80 +31,225 @@ const Third = styled.div`
   grid-gap: ${(props) => props.theme.spacing(4)};
   margin-top: 2rem;
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     grid-template-columns: repeat(3, 1fr);
   }
 `;
 
+const Quarter = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: ${(props) => props.theme.spacing(4)};
+  margin-top: 2rem;
+
+  & > div {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media ${(props) => props.theme.breakpoints.up("medium")} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ${(props) => props.theme.breakpoints.up("large")} {
+    grid-template-columns: repeat(4, 1fr);
+  }
+`;
+
+interface ButtonProps {
+  Big?;
+  Secondary?;
+}
+
+const buttonStyles = css<ButtonProps>`
+  color: #ffffff;
+  background-color: rgb(0, 0, 145);
+  border: rgb(0, 0, 145) solid 2px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    background-color: rgb(0, 0, 110);
+    border-color: rgb(0, 0, 110);
+  }
+
+  & img {
+    height: 20px;
+    margin: 0 5px;
+    vertical-align: text-bottom;
+    width: 20px;
+  }
+
+  ${(props) =>
+    props.Secondary &&
+    css`
+      background-color: transparent;
+      color: rgb(0, 0, 145);
+
+      &:hover {
+        background-color: #bbbbbb;
+        border-color: rgb(0, 0, 110);
+      }
+    `}
+
+  ${(props) =>
+    props.Big &&
+    css`
+      font-size: 20px;
+      padding: 15px;
+
+      & img {
+        height: 25px;
+        width: 25px;
+      }
+    `}
+`;
+
+const ResourceButton = styled.button`
+  ${buttonStyles}
+`;
+
+const ResourceLink = styled.a`
+  ${buttonStyles}
+`;
+
+const kitFaqStyles = css`
+  color: #1e1e1e;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  background-color: rgb(249, 248, 246);
+  border-bottom: solid 4px #000091;
+`;
+
+const Kit = styled.a`
+  ${kitFaqStyles};
+  padding: 20px 0;
+  margin: 20px 10px 0;
+`;
+
+const Faq = styled.a`
+  ${kitFaqStyles};
+
+  & > img {
+    padding: 40px 50px;
+    @media ${(props) => props.theme.breakpoints.down("medium")} {
+      display: none;
+    }
+  }
+
+  & > div {
+    display: inline-block;
+    padding-top: 17px;
+    padding-right: 17px;
+    width: calc(100% - 160px);
+    vertical-align: top;
+    @media ${(props) => props.theme.breakpoints.down("medium")} {
+      padding-left: 17px;
+      width: 100%;
+    }
+  }
+`;
+
+const ArrowedText = styled.span`
+  & a,
+  & a:visited {
+    color: black;
+  }
+
+  & span:first-child {
+    top: 6px;
+    position: relative;
+  }
+`;
+
+const PaddedTypography = styled(Typography)`
+  @media ${(props) => props.theme.breakpoints.up("medium")} {
+    padding-left: 100px;
+  }
+`;
+
+const Welcome = styled(Halved)`
+  & > img {
+    @media ${(props) => props.theme.breakpoints.down("large")} {
+      display: none;
+    }
+  }
+`;
+
 const carouselItems = [
-  <Kit
+  <ToKit
     image={media}
-    title={"Présentation de"}
+    title={"Présentation globale de"}
     text={"Trackdéchets"}
     link={
       "https://drive.google.com/file/d/1CsPwe17qpRY9KciPTuQOt3ABR8IDJCGg/view?usp=sharing"
     }
   />,
-  <Kit
+  <ToKit
     image={media}
-    title={"Kit de communication"}
-    text={"à destination des collectivités"}
+    title={"Brochure "}
+    text={"pour les collectivités"}
     link={
       "https://drive.google.com/file/d/1uqRmYNhjBabTBAqLLdXd316bnkUdvIEI/view?usp=sharing"
     }
   />,
-  <Kit
+  <ToKit
     image={media}
-    title={"Kit de communication"}
-    text={"à destination des producteurs"}
+    title={"Brochure"}
+    text={"pour les producteurs"}
     link={
       "https://drive.google.com/file/d/1gW6j1obgTawhS-gm0Hi98QyUW7WACTRz/view?usp=sharing"
     }
   />,
-  <Kit
+  <ToKit
     image={media}
-    title={"Kit de communication"}
-    text={"à destination des professionnels"}
+    title={"Brochure"}
+    text={"pour les professionnels"}
     link={
       "https://drive.google.com/file/d/1V_V4U3c0EFSbudxo3S-EL8nU3v-vuoIM/view?usp=sharing"
     }
   />,
-  <Kit
+  <ToKit
     image={media}
-    title={"Kit de communication"}
-    text={"à destination des transporteurs"}
+    title={"Brochure"}
+    text={"pour les transporteurs"}
     link={
       "https://drive.google.com/file/d/1oSBOVlIdxEDxOH3duAii6ijngdYNP5fm/view?usp=sharing"
     }
   />,
-  <Kit
+  <ToKit
     image={media}
     title={"Méthode de déploiement"}
-    text={"à destination des collecteurs"}
+    text={"pour les professionnels"}
     link={
       "https://drive.google.com/file/d/1xFT0j2UetrG4ZTwpP5GaCvZpPwY14ktq/view?usp=sharing"
     }
   />,
-  <Kit
+  <ToKit
     image={media}
-    title={"Flyer"}
-    text={"à destination des producteurs"}
+    title={"Flyer à imprimer"}
+    text={"pour l'inscription d'un producteur"}
     link={
       "https://drive.google.com/file/d/1sNz35lFHqVmKKQnOja41VIgxUYQa2JET/view?usp=sharing"
     }
   />,
-  <Kit
+  <ToKit
     image={media}
     title={"Mail d'information type"}
-    text={"pour mon partenaire"}
+    text={"pour mon partenaire déchet"}
     link={
       "https://drive.google.com/file/d/1bam-BN64f95ooWCU64H761gUNUzmnIyn/view?usp=sharing"
     }
   />,
-  <Kit
+  <ToKit
     image={media}
     title={"Mail d'information type"}
-    text={"pour mon client"}
+    text={"pour un producteur"}
     link={
       "https://drive.google.com/file/d/1lZjWzWZvmlRtvVhRIMyA_bKKH513Lmcv/view?usp=sharing"
     }
@@ -131,64 +265,38 @@ const carouselResponsiveConf = {
   },
 };
 
-export function ArrowedText({ text }) {
+export function ToArrowedText({ text }) {
   return (
-    <span className={styles.arrowedText}>
-      <span style={{ top: "6px", position: "relative" }}>
+    <ArrowedText>
+      <span>
         <img src={arrow} alt="arrow" width="24" />
       </span>
       <span dangerouslySetInnerHTML={{ __html: text }} />
-    </span>
+    </ArrowedText>
   );
 }
 
-export function FAQ({ question, text, link }) {
+export function ToFAQ({ question, text, link }) {
   return (
-    <div
-      style={{
-        cursor: "pointer",
-        backgroundColor: "rgb(249,248,246)",
-        borderBottom: "solid 4px #000091",
-      }}
-      onClick={() => window.open(link, "_blank")}
-    >
+    <Faq href={link} target={"_blank"}>
       <img
         height={"140px"}
         width={"160px"}
         src={questionMark}
-        style={{ padding: "40px 50px" }}
         alt={"Question"}
       />
-      <div
-        style={{
-          display: "inline-block",
-          paddingTop: "17px",
-          width: "calc(100% - 160px)",
-          verticalAlign: "top",
-        }}
-      >
-        <Typography
-          style={{ fontWeight: "bold" }}
-          dangerouslySetInnerHTML={{ __html: question }}
-        />
+      <div>
+        <Typography bold dangerouslySetInnerHTML={{ __html: question }} />
         <Typography dangerouslySetInnerHTML={{ __html: text }} />
         <img src={arrow} alt="arrow" width="24" />
       </div>
-    </div>
+    </Faq>
   );
 }
 
-export function Kit({ image, title, text, link }) {
+export function ToKit({ image, title, text, link }) {
   return (
-    <div
-      style={{
-        padding: "20px 0",
-        cursor: "pointer",
-        backgroundColor: "rgb(249,248,246)",
-        borderBottom: "solid 4px #000091",
-      }}
-      onClick={() => window.open(link, "_blank")}
-    >
+    <Kit href={link} target={"_blank"}>
       <img
         height={"80px"}
         width={"100%"}
@@ -197,12 +305,12 @@ export function Kit({ image, title, text, link }) {
         alt={"Image Kit"}
       />
       <Typography
-        style={{ fontWeight: "bold" }}
+        bold
         centered={true}
         dangerouslySetInnerHTML={{ __html: title }}
       />
       <Typography dangerouslySetInnerHTML={{ __html: text }} centered={true} />
-    </div>
+    </Kit>
   );
 }
 
@@ -244,19 +352,19 @@ export function Resources() {
     <Layout>
       <Section>
         <Container>
-          <Halved>
+          <Welcome>
             <div>
               <Typography variant="h1" gutterBottom>
                 Bienvenue sur le guide d'information Trackdéchets
               </Typography>
-              <Typography style={{ paddingLeft: "100px" }}>
+              <PaddedTypography>
                 Vous trouverez les réponses aux principales interrogations qui
                 nous sont régulièrement partagées : <br />
                 - Qu'est-ce que le service Trackdéchets ?<br />
                 - Comment communiquer sur Trackdéchets à mes clients et
                 prestataires ?<br />- Comment connecter mon logiciel métier à
                 Trackdéchets ?
-              </Typography>
+              </PaddedTypography>
             </div>
             <img
               width={"300px"}
@@ -264,7 +372,7 @@ export function Resources() {
               src={notification}
               alt={"notifications"}
             />
-          </Halved>
+          </Welcome>
         </Container>
       </Section>
       <Section>
@@ -275,32 +383,32 @@ export function Resources() {
           </Typography>
           <Typography>Vos questions les plus fréquentes.</Typography>
           <Halved>
-            <FAQ
+            <ToFAQ
               question="Qu’est-ce que Trackdéchets ?"
               text="Trackdéchets est un outil numérique qui vise à simplifier la traçabilité des déchets dangereux. "
               link="https://faq.trackdechets.fr/informations-generiques/trackdechets-pourquoi-pour-qui-par-qui-comment#quest-ce-que-trackdechets"
             />
-            <FAQ
+            <ToFAQ
               question="Est-ce que je suis concerné ?"
               text="Ce produit est à destination de tous les acteurs de la chaîne du déchet dangereux."
               link="https://faq.trackdechets.fr/informations-generiques/trackdechets-pourquoi-pour-qui-par-qui-comment#trackdechets-sadresse-a-qui"
             />
-            <FAQ
+            <ToFAQ
               question="Est-ce que Trackdéchets est obligatoire ?"
               text="Oui, Trackdéchets est une plateforme étatique réglementaire."
               link="https://faq.trackdechets.fr/informations-generiques/trackdechets-pourquoi-pour-qui-par-qui-comment#est-ce-que-trackdechets-est-obligatoire"
             />
-            <FAQ
+            <ToFAQ
               question="Comment s'inscire sur Trackdéchets ?"
               text="Il y a 2 cas de figures dans l'inscription à Trackdéchets."
               link="https://faq.trackdechets.fr/guide-dutilisation-pratique-de-trackdechets/creation-de-compte-sur-trackdechets#quelle-est-la-procedure-pour-sinscrire-sur-trackdechets"
             />
-            <FAQ
+            <ToFAQ
               question="J'utilise déjà un outil métier, comment se fait lien avec Trackdéchets ?"
               text="Trackdéchets vient s’interconnecter à votre outil existant pour permettre l’étape de dématérialisation."
               link="https://faq.trackdechets.fr/informations-generiques/trackdechets-et-interconnexion-avec-des-outils-metier/pourquoi-utiliser-trackdechets-si-jai-deja-un-outil-metier"
             />
-            <FAQ
+            <ToFAQ
               question="Quels sont les BSD pris en charge par la plateforme ?"
               text="Trackdéchets permet de tracer différents types de déchets."
               link="https://faq.trackdechets.fr/informations-generiques/les-fonctionnalites-de-trackdechets#quels-sont-les-bordereaux-de-suivi-des-dechets-bsd-dematerialises-dans-trackdechets"
@@ -310,13 +418,12 @@ export function Resources() {
             <div />
             <div />
             <div />
-            <a
-              className={styles.resourceButton}
+            <ResourceLink
               href={"https://faq.trackdechets.fr/"}
               target={"_blank"}
             >
               Consultez la foire aux questions
-            </a>
+            </ResourceLink>
           </Quarter>
         </Container>
       </Section>
@@ -343,22 +450,22 @@ export function Resources() {
             />
           </Third>
           <Halved>
-            <FAQ
+            <ToFAQ
               question="Est-ce qu'un prestataire peut préparer un BSD pour son client dans Trackdéchets ?"
               text="Tout acteur qui est indiqué sur le bordereau de suivi de déchet peut préparer un BSD."
               link="https://faq.trackdechets.fr/guide-dutilisation-pratique-de-trackdechets/les-fonctionnalites-principales-de-trackdechets/ledition-du-bsd-sur-trackdechets#qui-peut-preparer-un-brouillon-de-bsd-sur-trackdechets"
             />
-            <FAQ
+            <ToFAQ
               question="Comment obtenir mon registre dans Trackdéchets ?"
               text="Le registre se met à jour automatiquement à partir du moment où le BSD acte l’enlèvement du déchet."
               link="https://faq.trackdechets.fr/guide-dutilisation-pratique-de-trackdechets/les-fonctionnalites-principales-de-trackdechets/le-registre"
             />
-            <FAQ
+            <ToFAQ
               question="Comment tester Trackdéchets sans transférer de vrais BSD ?"
               text="Il existe un site de test dédié pour vous familiariser avec l'outil."
               link="https://faq.trackdechets.fr/informations-generiques/tester-sans-transferer-de-vrais-bsd-comment-faire"
             />
-            <FAQ
+            <ToFAQ
               question="Est-ce que je peux identifier un éco-organisme sur un BSD dans Trackdéchets ?"
               text="Il existe effectivement une fonctionnalité pour intégrer les éco-organismes dans Trackdéchets."
               link="https://faq.trackdechets.fr/guide-dutilisation-pratique-de-trackdechets/les-eco-organismes-sur-trackdechets"
@@ -367,22 +474,20 @@ export function Resources() {
           <Quarter>
             <div />
             <div />
-            <a
-              className={styles.resourceButton}
+            <ResourceLink
               href={
                 "https://www.youtube.com/channel/UClTyGa02yUsQ6fQGURHtY1w/videos"
               }
               target={"_blank"}
             >
               Consultez toutes les vidéos
-            </a>
-            <a
-              className={styles.resourceButton}
+            </ResourceLink>
+            <ResourceLink
               href={"https://faq.trackdechets.fr/"}
               target={"_blank"}
             >
               Consultez la foire aux questions
-            </a>
+            </ResourceLink>
           </Quarter>
         </Container>
       </Section>
@@ -409,15 +514,14 @@ export function Resources() {
             <div />
             <div />
             <div />
-            <a
-              className={styles.resourceButton}
+            <ResourceLink
               href={
                 "https://faq.trackdechets.fr/informations-generiques/devenir-partenaires-embarquer-mes-clients"
               }
               target={"_blank"}
             >
               Consultez la rubrique dans la FAQ
-            </a>
+            </ResourceLink>
           </Quarter>
         </Container>
       </Section>
@@ -429,12 +533,38 @@ export function Resources() {
                 Je veux suivre les actualités de Trackdéchets
               </Typography>
               <Typography>
-                <ArrowedText
+                <ToArrowedText
                   text={
-                    "Suivez TrackDéchets sur <a href='https://fr.linkedin.com/company/trackd%C3%A9chets-minist%C3%A8re-de-la-transition-%C3%A9cologique' target='_blank'>LinkedIn</a>"
+                    "Suivez Trackdéchets sur <a href='https://fr.linkedin.com/company/trackd%C3%A9chets-minist%C3%A8re-de-la-transition-%C3%A9cologique' target='_blank'>LinkedIn</a>"
                   }
                 />
               </Typography>
+              <ResourceButton
+                Big
+                style={{ marginTop: "20px" }}
+                onClick={() => setIsNLGeneralOpen(true)}
+              >
+                S'inscrire à la newsletter Trackdéchets
+                <img src={mail} height={"20px"} width={"20px"} alt={"Mail"} />
+              </ResourceButton>
+              {isNLGeneralOpen && (
+                <Modal onClose={() => setIsNLGeneralOpen(false)}>
+                  <iframe
+                    src="https://0806de2d.sibforms.com/serve/MUIEAHIcZ4oB1dfXYhFNGM7yQk5C6WI7VeAg_3aHo1MLi16FEHfRbmqgqRT68gHZD0mupU4fgkJVq3HMjvVLBG1nwXwzWXItN1pmPvqibXfGkgarq9LolotXzLkfR46tOV5TtPf6FczlEac50NZEoM4s1ZhZUYpAItIwxWuITpAQT222iKZRLO0uzXMY2RmjNC9SFQdEDoyPrGKx"
+                    frameBorder="0"
+                    scrolling="auto"
+                    allowFullScreen
+                    style={{
+                      width: "540px",
+                      height: "700px",
+                      display: "block",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                      maxWidth: "100%",
+                    }}
+                  />
+                </Modal>
+              )}
             </div>
             <div>
               <Typography variant="h2" gutterBottom>
@@ -442,71 +572,51 @@ export function Resources() {
                 Trackdéchets
               </Typography>
               <Typography>
-                <ArrowedText
+                <ToArrowedText
                   text={
                     "Consultez <a href='https://trello.com/b/2pkc7bFg/trackd%C3%A9chets-roadmap-produit' target='_blank'>la feuille de route publique</a>"
                   }
                 />
                 <br />
-                <ArrowedText
+                <ToArrowedText
                   text={
                     "Consultez <a href='https://developers.trackdechets.beta.gouv.fr/' target='_blank'>la documentation technique</a> dans l’espace developpeur"
                   }
                 />
               </Typography>
+              <ResourceButton
+                style={{ marginTop: "20px" }}
+                Big
+                Secondary
+                onClick={() => setIsNLTechOpen(true)}
+              >
+                S'inscrire à la newsletter Technique
+                <img
+                  src={mailBlue}
+                  height={"20px"}
+                  width={"20px"}
+                  alt={"Mail"}
+                />
+              </ResourceButton>
+              {isNLTechOpen && (
+                <Modal onClose={() => setIsNLTechOpen(false)}>
+                  <iframe
+                    src="https://0806de2d.sibforms.com/serve/MUIEAHQwLI4DmWML854ZRqMf-Ifiaw4ag7SHXC0IEIbQIZ1IcPFLnmOXxyJ4laAju06C0tkavZ3ys2dtB5U1uJjb1grzODmz6h28p7hkypvWShtiCFLOAu6t4OwEC_rZLaCil0SMHjs7xo3Sg5kfo4VLt6TNwZdYh6qkeM8u6D6h_jp_5G_ASr7fnyZUtM_W4nTy51no65EcNRqj"
+                    frameBorder="0"
+                    scrolling="auto"
+                    allowFullScreen
+                    style={{
+                      width: "540px",
+                      height: "700px",
+                      display: "block",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                      maxWidth: "100%",
+                    }}
+                  />
+                </Modal>
+              )}
             </div>
-          </Halved>
-          <Halved>
-            <a
-              className={`${styles.resourceButton} ${styles.big}`}
-              onClick={() => setIsNLGeneralOpen(true)}
-            >
-              S'inscrire à la newsletter Trackdéchets
-              <img src={mail} height={"20px"} width={"20px"} alt={"Mail"} />
-            </a>
-            {isNLGeneralOpen && (
-              <Modal onClose={() => setIsNLGeneralOpen(false)}>
-                <iframe
-                  src="https://0806de2d.sibforms.com/serve/MUIEAHIcZ4oB1dfXYhFNGM7yQk5C6WI7VeAg_3aHo1MLi16FEHfRbmqgqRT68gHZD0mupU4fgkJVq3HMjvVLBG1nwXwzWXItN1pmPvqibXfGkgarq9LolotXzLkfR46tOV5TtPf6FczlEac50NZEoM4s1ZhZUYpAItIwxWuITpAQT222iKZRLO0uzXMY2RmjNC9SFQdEDoyPrGKx"
-                  frameBorder="0"
-                  scrolling="auto"
-                  allowFullScreen
-                  style={{
-                    width: "540px",
-                    height: "700px",
-                    display: "block",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    maxWidth: "100%",
-                  }}
-                />
-              </Modal>
-            )}
-            <a
-              className={`${styles.resourceButton} ${styles.big}`}
-              onClick={() => setIsNLTechOpen(true)}
-            >
-              S'inscrire à la newsletter Technique
-              <img src={mail} height={"20px"} width={"20px"} alt={"Mail"} />
-            </a>
-            {isNLTechOpen && (
-              <Modal onClose={() => setIsNLTechOpen(false)}>
-                <iframe
-                  src="https://0806de2d.sibforms.com/serve/MUIEAHQwLI4DmWML854ZRqMf-Ifiaw4ag7SHXC0IEIbQIZ1IcPFLnmOXxyJ4laAju06C0tkavZ3ys2dtB5U1uJjb1grzODmz6h28p7hkypvWShtiCFLOAu6t4OwEC_rZLaCil0SMHjs7xo3Sg5kfo4VLt6TNwZdYh6qkeM8u6D6h_jp_5G_ASr7fnyZUtM_W4nTy51no65EcNRqj"
-                  frameBorder="0"
-                  scrolling="auto"
-                  allowFullScreen
-                  style={{
-                    width: "540px",
-                    height: "700px",
-                    display: "block",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    maxWidth: "100%",
-                  }}
-                />
-              </Modal>
-            )}
           </Halved>
         </Container>
       </Section>

@@ -16,7 +16,7 @@ const ProfilesItem = styled.article`
     margin-bottom: 0;
   }
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     margin-bottom: ${(props) => props.theme.spacing(12)};
 
     &::before,
@@ -39,7 +39,7 @@ const ProfilesItem = styled.article`
   }
 `;
 const ProfilesItemInner = styled(Container)`
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     display: flex;
     align-items: center;
     padding: 0;
@@ -63,7 +63,7 @@ const ProfilesItemIllustration = styled.div`
   justify-content: center;
   padding: ${(props) => props.theme.spacing(4)};
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;

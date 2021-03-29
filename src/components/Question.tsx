@@ -19,7 +19,7 @@ export const QuestionAnswer = styled(Typography).attrs({
     margin-bottom: 0;
   }
 
-  @media ${(props) => props.theme.breakpoints.up("medium")} {
+  @media ${(props) => props.theme.breakpoints.up("large")} {
     padding-left: ${(props) => props.theme.spacing(8)};
   }
 `;
