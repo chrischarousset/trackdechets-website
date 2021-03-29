@@ -2,12 +2,16 @@
 
 Ce dépôt contient les sources du site web de [Trackdéchets](https://trackdechets.beta.gouv.fr).
 
-- [Installation](#installation)
-- [Déploiement](#deploiement)
-- [Modifier les CGU](#modifier-les-cgu)
-- [Modifier la politique de confidentialité](#modifier-la-politique-de-confidentialite)
-- [Ajouter un partenaire](#ajouter-un-partenaire)
-- [Ajouter une bannière d'incident](#ajouter-une-bannière-d-incident)
+- [Trackdéchets - Site Web](#trackdéchets---site-web)
+  - [Installation](#installation)
+  - [Déploiement](#déploiement)
+  - [Modifier les CGU](#modifier-les-cgu)
+  - [Modifier les mentions d'accessibilité](#modifier-les-mentions-daccessibilité)
+  - [Modifier la politique de confidentialité](#modifier-la-politique-de-confidentialité)
+  - [Modifier les mentions légales](#modifier-les-mentions-légales)
+  - [Ajouter un partenaire](#ajouter-un-partenaire)
+  - [Ajouter une bannière d'incident](#ajouter-une-bannière-dincident)
+  - [LICENCE](#licence)
 
 ## Installation
 
@@ -28,6 +32,13 @@ Il est possible de les éditer directement sur GitHub :
 - [Éditer le fichier `content/pages/cgu.md`](https://github.com/MTES-MCT/trackdechets-website/edit/master/content/pages/cgu.md)
 
 Un résumé de la syntaxe markdown est disponible ici : [https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## Modifier les mentions d'accessibilité
+
+Les mentions d'accessibilité sont rédigées en markdown dans le fichier `content/pages/a11y.md`.
+Il est possible de les éditer directement sur GitHub :
+
+- [Éditer le fichier `content/pages/a11y.md`](https://github.com/MTES-MCT/trackdechets-website/edit/master/content/pages/a11y.md)
 
 ## Modifier la politique de confidentialité
 

@@ -66,7 +66,7 @@ export function Footer() {
           </Typography>
           <UnstyledList>
             <UnstyledListItem>
-              <FooterLink href="mailto:emmanuel.flahaut@developpement-durable.gouv.fr">
+              <FooterLink href="mailto:hello@trackdechets.beta.gouv.fr">
                 Nous contacter
               </FooterLink>
             </UnstyledListItem>
@@ -83,6 +83,11 @@ export function Footer() {
             <UnstyledListItem>
               <FooterLink as={RouterLink} to="/cgu">
                 Conditions générales d'utilisation
+              </FooterLink>
+            </UnstyledListItem>
+            <UnstyledListItem>
+              <FooterLink as={RouterLink} to="/accessibilite">
+                Accessibilité: Non conforme
               </FooterLink>
             </UnstyledListItem>
             <UnstyledListItem>
