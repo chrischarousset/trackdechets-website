@@ -33,9 +33,13 @@ export function FAQ() {
               d’une “start-up d’Etat” depuis 2018.
             </QuestionAnswer>
             <QuestionAnswer>
-              Dans le cadre des évolutions réglementaires (loi économie
-              circulaire), cet outil sera généralisé à tous les acteurs
-              concernés par la traçabilité des déchets dangereux en 2021.
+              L'évolution réglementaire prévoit la généralisation de l'usage de
+              la plateforme à compter du 1er janvier 2022, pour tous les acteurs
+              du déchet dangereux.
+              <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043294613">
+                Décret n° 2021-321 du 25 mars 2021 relatif à la traçabilité des
+                déchets, des terres excavées et des sédiments
+              </Link>
             </QuestionAnswer>
           </Question>
           <Question>
