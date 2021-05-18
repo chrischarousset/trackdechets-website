@@ -12,6 +12,7 @@
     "gatsby-plugin-matomo": "^0.8.3",
     "gatsby-plugin-react-helmet": "^3.6.0",
     "gatsby-plugin-styled-components": "^3.6.0",
+    "gatsby-plugin-tagmanager": "^1.0.1",
     "gatsby-source-filesystem": "^2.7.0",
     "gatsby-transformer-remark": "^2.12.0",
     "modern-normalize": "^1.0.0",

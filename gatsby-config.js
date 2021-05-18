@@ -35,13 +35,22 @@ module.exports = {
       },
     },
     {
-      // by default this plugin doesn't track anything when NODE_ENV !== "production"
-      // https://www.gatsbyjs.com/plugins/gatsby-plugin-matomo/
-      resolve: "gatsby-plugin-matomo",
+      resolve:  `gatsby-plugin-tagmanager`,
       options: {
-        siteId: "83",
-        matomoUrl: "https://stats.data.gouv.fr/",
-        siteUrl,
+        postBody: [
+          {
+            type: `script`,
+            name: `matomo-tag-manager`,
+            attributes: {
+              type: `text/javascript`,
+            },
+            dangerousContent: `var _mtm = _mtm || [];
+                  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+                  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                  g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://stats.data.gouv.fr/js/container_j7nJr4FM_dev_753b5bfb24b2f6d74a683dd5.js';
+                  s.parentNode.insertBefore(g,s);`,
+          },
+        ],
       },
     },
   ],
