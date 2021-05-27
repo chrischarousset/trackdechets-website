@@ -44,6 +44,18 @@ export function Stats() {
             </GridItem>
           </Grid>
 
+          <Grid items={1}>
+            <GridItem>
+              <iframe
+                src="https://analytics.trackdechets.beta.gouv.fr/public/question/3c57f70c-fc58-452e-81f1-33dcaa14166d"
+                frameBorder="0"
+                width="800"
+                height="400"
+                allowTransparency
+              />
+            </GridItem>
+          </Grid>
+
           <Grid items={3}>
             <GridItem>
               <iframe
