@@ -6,6 +6,7 @@ import { UnstyledList, UnstyledListItem } from "./List";
 import { Typography } from "./Typography";
 import { Link } from "./Link";
 import fabriquenumerique from "./assets/fabriquenumerique.svg";
+import betagouv from "./assets/betagouvfr.svg";
 
 const FooterContainer = styled.footer`
   padding: ${(props) => props.theme.spacing(5)} 0;
@@ -33,7 +34,9 @@ const FooterSummary = styled.div`
     margin-bottom: 0;
   }
 `;
-const FooterSummaryLogo = styled.div``;
+const FooterSummaryLogo = styled.div`
+  margin-right: 10px;
+`;
 const FooterSummaryContent = styled.div`
   padding-left: ${(props) => props.theme.spacing(2)};
   max-width: 20rem;
@@ -52,6 +55,11 @@ export function Footer() {
               alt="Logo de La Fabrique Numérique"
               width="150"
             />
+          </FooterSummaryLogo>
+          <FooterSummaryLogo>
+            <a href="https://beta.gouv.fr/">
+              <img src={betagouv} alt="Logo beta.gouv.fr" width="150" />
+            </a>
           </FooterSummaryLogo>
           <FooterSummaryContent>
             Trackdéchets est un service numérique de l'Etat incubé à la Fabrique
