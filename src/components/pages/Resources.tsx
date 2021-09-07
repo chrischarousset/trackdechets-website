@@ -187,7 +187,7 @@ const carouselItems = [
     title={"Présentation globale de"}
     text={"Trackdéchets"}
     link={
-      "https://drive.google.com/file/d/1CsPwe17qpRY9KciPTuQOt3ABR8IDJCGg/view?usp=sharing"
+      "https://drive.google.com/file/d/1IrQdVz05LWLHq1PscxFNcE1HjoztFj4P/view?usp=sharing"
     }
   />,
   <ToKit
@@ -195,7 +195,7 @@ const carouselItems = [
     title={"Brochure "}
     text={"pour les collectivités"}
     link={
-      "https://drive.google.com/file/d/1uqRmYNhjBabTBAqLLdXd316bnkUdvIEI/view?usp=sharing"
+      "https://drive.google.com/file/d/1dMSC-NCVGyr25_HTMS_EOwreNDjJL6wP/view?usp=sharing"
     }
   />,
   <ToKit
@@ -203,7 +203,7 @@ const carouselItems = [
     title={"Brochure"}
     text={"pour les producteurs"}
     link={
-      "https://drive.google.com/file/d/1gW6j1obgTawhS-gm0Hi98QyUW7WACTRz/view?usp=sharing"
+      "https://drive.google.com/file/d/1FVdcB0AHhrcxJfUnDp22mjGDLEhJWaIV/view?usp=sharing"
     }
   />,
   <ToKit
@@ -211,7 +211,7 @@ const carouselItems = [
     title={"Brochure"}
     text={"pour les professionnels"}
     link={
-      "https://drive.google.com/file/d/1V_V4U3c0EFSbudxo3S-EL8nU3v-vuoIM/view?usp=sharing"
+      "https://drive.google.com/file/d/1FVdcB0AHhrcxJfUnDp22mjGDLEhJWaIV/view?usp=sharing"
     }
   />,
   <ToKit
@@ -235,7 +235,7 @@ const carouselItems = [
     title={"Flyer à imprimer"}
     text={"pour l'inscription d'un producteur"}
     link={
-      "https://drive.google.com/file/d/1sNz35lFHqVmKKQnOja41VIgxUYQa2JET/view?usp=sharing"
+      "https://drive.google.com/file/d/19AK2bXPNV4FSHFQONqlD-OX_SR1bzXsD/view?usp=sharing"
     }
   />,
   <ToKit
