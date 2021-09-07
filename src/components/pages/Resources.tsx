@@ -386,27 +386,27 @@ export function Resources() {
             <ToFAQ
               question="Qu’est-ce que Trackdéchets ?"
               text="Trackdéchets est un outil numérique qui vise à simplifier la traçabilité des déchets dangereux. "
-              link="https://faq.trackdechets.fr/informations-generiques/trackdechets-pourquoi-pour-qui-par-qui-comment#quest-ce-que-trackdechets"
+              link="https://faq.trackdechets.fr/informations-generiques/les-fondamentaux/quest-ce-que-trackdechets"
             />
             <ToFAQ
               question="Est-ce que je suis concerné ?"
               text="Ce produit est à destination de tous les acteurs de la chaîne du déchet dangereux."
-              link="https://faq.trackdechets.fr/informations-generiques/trackdechets-pourquoi-pour-qui-par-qui-comment#trackdechets-sadresse-a-qui"
+              link="https://faq.trackdechets.fr/informations-generales/qui-est-concerne-par-trackdechets"
             />
             <ToFAQ
               question="Est-ce que Trackdéchets est obligatoire ?"
               text="Oui, Trackdéchets est une plateforme étatique réglementaire."
-              link="https://faq.trackdechets.fr/informations-generiques/trackdechets-pourquoi-pour-qui-par-qui-comment#est-ce-que-trackdechets-est-obligatoire"
+              link="https://faq.trackdechets.fr/informations-generiques/les-fondamentaux/reglementation/qui-est-concerne-par-lobligatoriete-trackdechets"
             />
             <ToFAQ
               question="Comment s'inscire sur Trackdéchets ?"
               text="Il y a 2 cas de figures dans l'inscription à Trackdéchets."
-              link="https://faq.trackdechets.fr/guide-dutilisation-pratique-de-trackdechets/creation-de-compte-sur-trackdechets#quelle-est-la-procedure-pour-sinscrire-sur-trackdechets"
+              link="https://faq.trackdechets.fr/informations-generiques/sinscrire"
             />
             <ToFAQ
               question="J'utilise déjà un outil métier, comment se fait lien avec Trackdéchets ?"
               text="Trackdéchets vient s’interconnecter à votre outil existant pour permettre l’étape de dématérialisation."
-              link="https://faq.trackdechets.fr/informations-generiques/trackdechets-et-interconnexion-avec-des-outils-metier/pourquoi-utiliser-trackdechets-si-jai-deja-un-outil-metier"
+              link="https://faq.trackdechets.fr/informations-generiques/les-fondamentaux/trackdechets-et-interconnexion-avec-des-outils-metier/interfacer-son-outil-metier-a-trackdechets"
             />
             <ToFAQ
               question="Quels sont les BSD pris en charge par la plateforme ?"
