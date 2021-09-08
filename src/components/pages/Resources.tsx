@@ -240,6 +240,14 @@ const carouselItems = [
   />,
   <ToKit
     image={media}
+    title={"Flyer à imprimer"}
+    text={"pour les producteurs de DASRI"}
+    link={
+      "https://drive.google.com/file/d/1t32Cdwc10kjPSOAVi9OOqFYWHGRtcmih/view?usp=sharing"
+    }
+  />,
+  <ToKit
+    image={media}
     title={"Mail d'information type"}
     text={"pour mon partenaire déchet"}
     link={
@@ -254,15 +262,31 @@ const carouselItems = [
       "https://drive.google.com/file/d/1azAdLHnFdzgL3rfbxMYQcOKNEB5W8DUlY9mEf2SdlOU/view?usp=sharing"
     }
   />,
+  <ToKit
+    image={media}
+    title={"Dossier de presse"}
+    text={"Trackdéchets"}
+    link={
+      "https://drive.google.com/file/d/1te_BryLoJzklGbmh8G_LuhB47MZTIEck/view?usp=sharing"
+    }
+  />,
+  <ToKit
+    image={media}
+    title={"Dossier de presse"}
+    text={"pour les transporteurs"}
+    link={
+      "https://drive.google.com/file/d/1sIG50Du_oooOUgIW0H--N7wOkAAwRYQE/view?usp=sharing"
+    }
+  />
 ];
 
 const carouselResponsiveConf = {
   0: {
-    items: 1,
+    items: 1
   },
   1024: {
-    items: 3,
-  },
+    items: 3
+  }
 };
 
 export function ToArrowedText({ text }) {
@@ -319,7 +343,7 @@ export function EmbeddedVideo({ url, text }) {
     <div
       style={{
         backgroundColor: "rgb(231,231,231)",
-        borderBottom: "solid 4px #000091",
+        borderBottom: "solid 4px #000091"
       }}
     >
       <iframe
@@ -336,7 +360,7 @@ export function EmbeddedVideo({ url, text }) {
           fontSize: "16px",
           fontWeight: "bold",
           padding: "6px 0",
-          textAlign: "center",
+          textAlign: "center"
         }}
         dangerouslySetInnerHTML={{ __html: text }}
       />
@@ -435,18 +459,22 @@ export function Resources() {
           <Typography>Au coeur de Trackdéchets.</Typography>
           <Third>
             <EmbeddedVideo
+              url={"https://www.youtube.com/embed/cqcOscJF34U"}
+              text={
+                "Producteur de déchets dangereux ? <br/> Formez-vous à Trackdéchets en moins de 10min ! "
+              }
+            />
+            <EmbeddedVideo
+              url={"https://www.youtube.com/embed/YmlKTv75rjk"}
+              text={
+                "Transporteurs ? <br/> Formez-vous en 10min à Trackdéchets ! "
+              }
+            />
+            <EmbeddedVideo
               url={"https://www.youtube.com/embed/XvZN57lGk2s"}
               text={
                 "Comment fonctionne la signature<br/>dématérialisée au moment de l'enlèvement ?"
               }
-            />
-            <EmbeddedVideo
-              url={"https://www.youtube.com/embed/xmSEisrTTHs"}
-              text={"Comment savoir si<br/>un prestataire est inscrit ?"}
-            />
-            <EmbeddedVideo
-              url={"https://www.youtube.com/embed/qBfl1zymtrM"}
-              text={"Quel document présenter<br/>en cas de contrôle routier ?"}
             />
           </Third>
           <Halved>
@@ -560,7 +588,7 @@ export function Resources() {
                       display: "block",
                       marginLeft: "auto",
                       marginRight: "auto",
-                      maxWidth: "100%",
+                      maxWidth: "100%"
                     }}
                   />
                 </Modal>
@@ -611,7 +639,7 @@ export function Resources() {
                       display: "block",
                       marginLeft: "auto",
                       marginRight: "auto",
-                      maxWidth: "100%",
+                      maxWidth: "100%"
                     }}
                   />
                 </Modal>
