@@ -259,7 +259,7 @@ const carouselItems = [
     title={"Mail d'information type"}
     text={"pour un producteur"}
     link={
-      "https://drive.google.com/file/d/1azAdLHnFdzgL3rfbxMYQcOKNEB5W8DUlY9mEf2SdlOU/view?usp=sharing"
+      "https://drive.google.com/file/d/1lZjWzWZvmlRtvVhRIMyA_bKKH513Lmcv/view"
     }
   />,
   <ToKit
