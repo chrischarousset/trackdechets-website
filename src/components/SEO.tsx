@@ -57,7 +57,7 @@ export function SEO() {
         {
           "http-equiv": "Content-Security-Policy",
           content:
-            "default-src 'self';base-uri 'self';font-src 'self' https: data:;frame-src youtube.com www.youtube.com;img-src 'self' data:;object-src 'none';script-src 'unsafe-inline';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "default-src 'self';base-uri 'self';font-src 'self' https: data:;frame-src youtube.com www.youtube.com;img-src 'self' data:;object-src 'none';script-src 'self' 'unsafe-inline';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
         },
         {
           "http-equiv": "X-Content-Type-Options",
