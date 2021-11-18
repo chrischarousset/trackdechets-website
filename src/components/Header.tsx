@@ -93,6 +93,11 @@ export function Header() {
                 Partenaires
               </HeaderNavLink>
             </InlineListItem>
+            <InlineListItem>
+              <HeaderNavLink href="https://sandbox.trackdechets.beta.gouv.fr/login">
+                Site de test
+              </HeaderNavLink>
+            </InlineListItem>
           </InlineList>
           <InlineList>
             <InlineListItem>
