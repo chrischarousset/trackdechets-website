@@ -23,11 +23,19 @@ const GridItem = styled.div`
   justify-content: center;
 `;
 
+const Maintenance = styled.div`
+  padding-top: 100px;
+  padding-bottom: 100px;
+`;
+
 export function Stats() {
   return (
     <Layout>
       <Container>
-        <Section>
+        <Maintenance>
+          <h2>Page statistiques en maintenance.</h2>
+        </Maintenance>
+        {/* <Section>
           <SectionHeading>
             Déchets dangereux traçés dans Trackdéchets
           </SectionHeading>
@@ -139,7 +147,7 @@ export function Stats() {
               />
             </GridItem>
           </Grid>
-        </Section>
+        </Section> */}
       </Container>
     </Layout>
   );
