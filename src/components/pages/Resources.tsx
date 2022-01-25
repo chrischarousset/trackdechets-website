@@ -187,7 +187,7 @@ const carouselItems = [
     title={"Présentation globale de"}
     text={"Trackdéchets"}
     link={
-      "https://drive.google.com/file/d/1IrQdVz05LWLHq1PscxFNcE1HjoztFj4P/view?usp=sharing"
+      "https://drive.google.com/file/d/11NYm6i1OotMmVi-gDDD1kGnKEvH2U3sE/view?usp=sharing"
     }
   />,
   <ToKit
@@ -195,15 +195,7 @@ const carouselItems = [
     title={"Brochure "}
     text={"pour les collectivités"}
     link={
-      "https://drive.google.com/file/d/1dMSC-NCVGyr25_HTMS_EOwreNDjJL6wP/view?usp=sharing"
-    }
-  />,
-  <ToKit
-    image={media}
-    title={"Brochure"}
-    text={"pour les producteurs"}
-    link={
-      "https://drive.google.com/file/d/1FVdcB0AHhrcxJfUnDp22mjGDLEhJWaIV/view?usp=sharing"
+      "https://drive.google.com/file/d/1RLfOw7D8R3DgB8nEG3-CB7vsbFVp0jik/view?usp=sharing"
     }
   />,
   <ToKit
@@ -211,15 +203,7 @@ const carouselItems = [
     title={"Brochure"}
     text={"pour les professionnels"}
     link={
-      "https://drive.google.com/file/d/1FVdcB0AHhrcxJfUnDp22mjGDLEhJWaIV/view?usp=sharing"
-    }
-  />,
-  <ToKit
-    image={media}
-    title={"Brochure"}
-    text={"pour les transporteurs"}
-    link={
-      "https://drive.google.com/file/d/1oSBOVlIdxEDxOH3duAii6ijngdYNP5fm/view?usp=sharing"
+      "https://drive.google.com/file/d/1yWCtVWF3l1kantFKuhdSRdplAHvANOZl/view?usp=sharing"
     }
   />,
   <ToKit
@@ -235,7 +219,7 @@ const carouselItems = [
     title={"Flyer à imprimer"}
     text={"pour l'inscription d'un producteur"}
     link={
-      "https://drive.google.com/file/d/19AK2bXPNV4FSHFQONqlD-OX_SR1bzXsD/view?usp=sharing"
+      "https://drive.google.com/file/d/1I6Cp3EnyzkPGnuMlFOTZHvFW8BwqHPA3/view?usp=sharing"
     }
   />,
   <ToKit
@@ -251,7 +235,7 @@ const carouselItems = [
     title={"Mail d'information type"}
     text={"pour mon partenaire déchet"}
     link={
-      "https://drive.google.com/file/d/1bam-BN64f95ooWCU64H761gUNUzmnIyn/view?usp=sharing"
+      "https://docs.google.com/document/d/1bam-BN64f95ooWCU64H761gUNUzmnIyn/edit?usp=sharing&ouid=117864328329818097926&rtpof=true&sd=true"
     }
   />,
   <ToKit
@@ -259,7 +243,7 @@ const carouselItems = [
     title={"Mail d'information type"}
     text={"pour un producteur"}
     link={
-      "https://drive.google.com/file/d/1lZjWzWZvmlRtvVhRIMyA_bKKH513Lmcv/view"
+      "https://docs.google.com/document/d/1lZjWzWZvmlRtvVhRIMyA_bKKH513Lmcv/edit?usp=sharing&ouid=117864328329818097926&rtpof=true&sd=true"
     }
   />,
   <ToKit
@@ -267,7 +251,7 @@ const carouselItems = [
     title={"Dossier de presse"}
     text={"Trackdéchets"}
     link={
-      "https://drive.google.com/file/d/1te_BryLoJzklGbmh8G_LuhB47MZTIEck/view?usp=sharing"
+      "https://drive.google.com/file/d/18vYO25SYU-bak4zLKsPl948wWpNCTuqH/view?usp=sharing"
     }
   />,
   <ToKit
@@ -275,18 +259,18 @@ const carouselItems = [
     title={"Dossier de presse"}
     text={"pour les transporteurs"}
     link={
-      "https://drive.google.com/file/d/1sIG50Du_oooOUgIW0H--N7wOkAAwRYQE/view?usp=sharing"
+      "https://drive.google.com/file/d/1cUwg08ewoiIdXHsxkW3U906T9dEQWqnX/view?usp=sharing"
     }
-  />
+  />,
 ];
 
 const carouselResponsiveConf = {
   0: {
-    items: 1
+    items: 1,
   },
   1024: {
-    items: 3
-  }
+    items: 3,
+  },
 };
 
 export function ToArrowedText({ text }) {
@@ -343,7 +327,7 @@ export function EmbeddedVideo({ url, text }) {
     <div
       style={{
         backgroundColor: "rgb(231,231,231)",
-        borderBottom: "solid 4px #000091"
+        borderBottom: "solid 4px #000091",
       }}
     >
       <iframe
@@ -360,7 +344,7 @@ export function EmbeddedVideo({ url, text }) {
           fontSize: "16px",
           fontWeight: "bold",
           padding: "6px 0",
-          textAlign: "center"
+          textAlign: "center",
         }}
         dangerouslySetInnerHTML={{ __html: text }}
       />
@@ -588,7 +572,7 @@ export function Resources() {
                       display: "block",
                       marginLeft: "auto",
                       marginRight: "auto",
-                      maxWidth: "100%"
+                      maxWidth: "100%",
                     }}
                   />
                 </Modal>
@@ -639,7 +623,7 @@ export function Resources() {
                       display: "block",
                       marginLeft: "auto",
                       marginRight: "auto",
-                      maxWidth: "100%"
+                      maxWidth: "100%",
                     }}
                   />
                 </Modal>
