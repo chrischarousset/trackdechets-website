@@ -15,7 +15,7 @@ Ce dépôt contient les sources du site web de [Trackdéchets](https://trackdech
 
 ## Installation
 
-1. Installer Node.js
+1. Installer Node.js 14
 2. Lancer la commande `npm install`
 3. Démarrer l'application via la commande `npm start`
 
