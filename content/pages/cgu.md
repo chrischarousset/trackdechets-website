@@ -23,9 +23,9 @@ Les **« Services »** sont les fonctionnalités offertes par la plateforme pour
 
 # Article 4- Fonctionnalités
 
-## 4.1 Création du profil
+## 4.1 Création de compte
 
-La création du profil est gratuite et est ouverte à plusieurs types de profils :
+La création d'un compte utilisateur est gratuite et est ouverte à plusieurs types de profils :
 
 - producteur de déchets,
 - professionnel de la gestion de déchets (collecteurs, installations de tri-transit-regroupement, installation de traitement)
@@ -33,31 +33,18 @@ La création du profil est gratuite et est ouverte à plusieurs types de profils
 - éco-organisme
 - courtiers et négociants
 
-La création d’un compte est réalisée en ligne via le service. Elle est relative à une personne physique représentant l’entreprise et ayant autorité pour le faire. La création de compte se fait en 2 étapes : 1/ création de compte individuel associé à une adresse email 2/ rattachement d'un compte à une entreprise. Pour bénéficier d’un compte sur le service (étape 1), il convient :
+La création d’un compte est réalisée en ligne via le service. Elle est relative à une personne physique représentant l’entreprise et ayant autorité pour le faire. La création de compte se fait en 2 étapes : 1/ création de compte individuel associé à une adresse email 2/ rattachement d'un compte à un établissement. Pour bénéficier d’un compte sur le service (étape 1), il convient :
 
 - de renseigner les champs obligatoires du formulaire d’inscription en ligne,
 - d’activer le compte en cliquant sur le lien reçu par courriel à l’adresse email indiquée.
 
-La personne souhaitant créer un compte peut également rajouter un justificatif en pièce-jointe qui peut être examiné par l’équipe en charge du service afin de vérifier l’appartenance à l’entreprise dont il sollicite le rattachement.
-Le compte est alors validé et les différentes fonctionnalités sont disponibles.
-Le service se réserve le droit de vérifier la corrélation d’un compte avec une entreprise (étape 2).
 
-## 4.2 Autres fonctionnalités
+Le rattachement d'un établissement à un utilisateur (étape 2) est soumis à un processus de vérification permettant de s'assurer de l'appartenance de l'utilisateur à l'établissement. Un courrier contenant un code de vérification pourra éventuellement être envoyé à l'adresse renseignée au Registre du Commerce et des Sociétés.
 
-Le titulaire du compte administrateur dispose notamment des fonctionnalités suivantes dans son espace :
+## 4.2 Édition de bordereaux de suivi de déchets
 
-- l’édition dématérialisée de bordereaux de suivi de déchets dangereux (modèle Cerfa 12571\*01) : préparation et signature selon l’ordre réglementaire
-- d’éditer un pdf du bordereau émis ;
-- de connaître le statut du bordereau de suivi de déchets entre un producteur et un collecteur ou un producteur et une installation de traitement ;
-- de conserver et d’archiver les bordereaux ;
-- de visualiser le registre des déchets dangereux ;
-- de vérifier un prestataire en consultant sa fiche entreprise;
-- de demander une aide en ligne ;
-- d'accéder à un tableau de bord récapitulatif ;
-- d’inviter des membres à rejoindre l’établissement et de définir leurs droits ;
-- de gérer les paramètres de l’entreprise, notamment les données publiques et privées liées à l’établissement (fiche entreprise, nom usuel, identifiant GEREP, renouvellement du code de sécurité.)
 
-### Édition d’un bordereau en ligne
+### 4.2.1 En ligne
 
 Après connexion, l’utilisateur est dirigé vers le tableau comportant les bordereaux le concernant (si des bordereaux le concernant ont été édités). Le tableau permet de chercher, trier et vérifier l’état des bordereaux.
 L’onglet “Créer un bordereau” permet la création d’un bordereau en mode brouillon. La création du bordereau nécessite de remplir les mêmes champs qu’un bordereau modèle Cerfa 12571\*01 pour les cases 1 à 9.
@@ -78,7 +65,7 @@ Si les champs requis ne sont pas tous complétés, le service invite à revenir 
 
 Pour des raisons pratiques, il est possible de dupliquer un bordereau existant. Ce bordereau se retrouve alors dans les brouillons de façon à pouvoir modifier certains paramètres (conditionnement ou quantité de déchets par exemple) avant validation.
 
-### Edition d’un pdf
+**Edition d’un pdf**
 
 Le service propose l'édition en mode pdf du bordereau réalisé pour confier le document au transporteur qui n’aurait pas Trackdéchets afin de respecter les obligations réglementaires.
 Si le BSD Trackdéchets est rematérialisé, le transporteur peut apposer sa signature physique sur l’espace réservé à son emplacement sur le bordereau, valant prise en charge du déchet.
@@ -93,11 +80,38 @@ Il appartient au prestataire de :
 Ces actions ont un impact sur le statut du déchet indiqué sur le bordereau.
 Dans les deux cas, cliquer sur “Je Valide" équivaut à valider les informations et apposer sa signature.
 
-### Vérification d’un prestataire
+### 4.2.2 Par l'API
+
+**Utilisation personnel**
+
+Une fois le compte créé, l’utilisateur peut via son compte générer un jeton d'accès lui permettant de se connecter à l'API Trackdéchets. Les détails techniques de ces accès sont documentés à l’adresse : https://developers.trackdechets.beta.gouv.fr/. Les jetons d'accès ont une durée de validité illimitée. Ils peuvent être révoqués à tout moment depuis le compte Trackdéchets.
+
+**Développement d'une application tierce**
+
+Il est possible de développer une application sur la plateforme Trackdéchets et d’y implémenter le procotole OAuth2 pour sa propre entreprise ou pour le compte de ses clients. Celui-ci permet à des logiciels tiers type SaaS déchets d'accéder à l'API Trackdéchets pour le compte d'utilisateurs sans exposer le mot de passe de celui-ci. Les utilisateurs peuvent à tout moment révoquer l'accès donné à une application tierce depuis son compte Trackdéchets.
+
+## 4.3 Vérification d’un prestataire
 
 La responsabilité de la prise en charge et du traitement du déchet incombe au producteur/détenteur du déchet.
 
 Si celui-ci a un doute sur le fait qu’une entreprise avec laquelle il envisage de travailler, il peut consulter la fiche entreprise de l'établissement concerné via le formulaire d'édition du BSD.
+## 4.4 Suppression de compte
+
+Pour supprimer un compte utilisateur Trackdéchets, l'utilisateur peut envoyer sa demande par courriel à l'adresse hello@trackdechets.beta.gouv.fr.
+## 4.5 Autres fonctionnalités
+
+Le titulaire du compte administrateur dispose notamment des fonctionnalités suivantes dans son espace :
+
+- de connaître le statut du bordereau de suivi de déchets entre un producteur et un collecteur ou un producteur et une installation de traitement ;
+- de conserver et d’archiver les bordereaux ;
+- de visualiser le registre des déchets dangereux ;
+- de vérifier un prestataire en consultant sa fiche entreprise;
+- de demander une aide en ligne ;
+- d'accéder à un tableau de bord récapitulatif ;
+- d’inviter des membres à rejoindre l’établissement et de définir leurs droits ;
+- de gérer les paramètres de l’entreprise, notamment les données publiques et privées liées à l’établissement (fiche entreprise, nom usuel, identifiant GEREP, renouvellement du code de sécurité.)
+
+
 
 # Article 5 – Responsabilités
 
@@ -110,11 +124,18 @@ L’éditeur fournit les moyens nécessaires et raisonnables pour assurer un acc
 
 ## 5.2 L’Utilisateur
 
+### 5.2.1 Utilisateur final du Service
+
 L’Utilisateur s’assure de garder son mot de passe secret. Toute divulgation du mot de passe, quelle que soit sa forme, est interdite. Il assume les risques liés à l’utilisation de son identifiant et mot de passe.
 Il s’engage à ne pas commercialiser les données reçues et à ne pas les communiquer à des tiers en dehors des cas prévus par la loi.
 Toute information transmise par l’Utilisateur est de sa seule responsabilité. Il est rappelé que toute personne procédant à une fausse déclaration pour elle-même ou pour autrui s’expose, notamment, aux sanctions prévues à l’article 441-1 du code pénal, prévoyant des peines pouvant aller jusqu’à trois ans d’emprisonnement et 45 000 euros d’amende.
 L’Utilisateur s’engage à ne pas mettre en ligne de contenus ou informations contraires aux dispositions légales et réglementaires en vigueur.
 Le contenu de l’Utilisateur peut être à tout moment et pour n’importe quelle raison supprimé ou modifié par le site, sans préavis.
+
+### 5.2.2 Éditeur d'applications tierces
+
+L'éditeur d'une application tierce est responsable des traitements de données qu’il opère pour le compte de sa propre entreprise ou pour le compte de ses clients sur les données reçues au moyen du Service et, à ce titre, respecte les obligations inhérentes à ce traitement, notamment celles prévues par le RGPD et la loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés modifiée.
+L'éditeur d'une application tierce s’engage à ne pas commercialiser les données reçues et à ne pas les communiquer à des tiers en dehors des cas prévus par la loi. L'éditeur d'une application tierce s’engage à mettre en œuvre les mesures de sécurité techniques et organisationnelles nécessaires au bon fonctionnement du Service, notamment en matière de traçabilité interne, et à informer, le cas échéant, Trackdéchets de toute difficulté de nature à compromettre le bon fonctionnement du Service. En particulier, il garantit la confidentialité des jetons d'accès stockés. Dès lors que la confidentialité du jeton a pu être compromise, y compris de manière accidentelle, le jeton est révoqué. A cette fin, l’éditeur d'une application tierce s’engage à alerter sans délai Trackdéchets en envoyant un courriel à hello@trackdechets.beta.gouv.fr. En cas d’incident grave dans l’utilisation du Service, l’éditeur d'une application tierce s’engage à coopérer avec Trackdéchets dans la réalisation d’un audit, en fournissant toutes les informations nécessaires.
 
 # Article 6 - Mise à jour des conditions d’utilisation
 
