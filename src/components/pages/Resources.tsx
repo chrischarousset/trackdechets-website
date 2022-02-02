@@ -192,7 +192,7 @@ const carouselItems = [
   />,
   <ToKit
     image={media}
-    title={"Brochure "}
+    title={"Brochure"}
     text={"pour les collectivités"}
     link={
       "https://drive.google.com/file/d/1RLfOw7D8R3DgB8nEG3-CB7vsbFVp0jik/view?usp=sharing"
@@ -227,7 +227,15 @@ const carouselItems = [
     title={"Flyer à imprimer"}
     text={"pour les producteurs de DASRI"}
     link={
-      "https://drive.google.com/file/d/1t32Cdwc10kjPSOAVi9OOqFYWHGRtcmih/view?usp=sharing"
+      "https://drive.google.com/file/d/1DVrNN_eUFTdOn0GRvpkZdR-07kB3D690/view?usp=sharing"
+    }
+  />,
+  <ToKit
+    image={media}
+    title={"Flyer à imprimer"}
+    text={"pour les producteurs d'amiante"}
+    link={
+      "https://drive.google.com/file/d/1CYiy0wHr1VwFWBpSGo1HxQ_r8oZednYz/view?usp=sharing"
     }
   />,
   <ToKit
