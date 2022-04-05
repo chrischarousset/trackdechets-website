@@ -21,7 +21,7 @@ export function Stats() {
           <Iframe
             src="https://statistiques.trackdechets.beta.gouv.fr"
             frameBorder="0"
-            width="1000"
+            width="1200"
             height="3000"
             allowTransparency
           />
