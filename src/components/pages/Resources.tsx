@@ -240,6 +240,14 @@ const carouselItems = [
   />,
   <ToKit
     image={media}
+    title={"Flyer à imprimer"}
+    text={"pour les transporteurs"}
+    link={
+      "https://drive.google.com/drive/folders/1XeynYevaUvwIND7_aRPwa0KXkS2bVsFS"
+    }
+  />,
+  <ToKit
+    image={media}
     title={"Mail d'information type"}
     text={"pour mon partenaire déchet"}
     link={
