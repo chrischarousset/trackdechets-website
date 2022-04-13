@@ -471,7 +471,7 @@ export function Resources() {
               }
             />
             <EmbeddedVideo
-              url={"https://www.youtube.com/embed/XvZN57lGk2s"}
+              url={"https://www.youtube.com/embed/yjP6vbBtrec"}
               text={
                 "Comment fonctionne la signature<br/>dématérialisée au moment de l'enlèvement ?"
               }
