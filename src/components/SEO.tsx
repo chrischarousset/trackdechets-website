@@ -29,6 +29,10 @@ export function SEO() {
       htmlAttributes={{ lang: "fr" }}
       meta={[
         {
+          name: "icon",
+          href: "static/favicon.ico"
+        },
+        {
           name: "title",
           property: "og:title",
           content: title
