@@ -420,7 +420,7 @@ export function Resources() {
             <ToFAQ
               question="Est-ce que Trackdéchets est obligatoire ?"
               text="Oui, Trackdéchets est une plateforme étatique réglementaire."
-              link="https://faq.trackdechets.fr/informations-generiques/les-fondamentaux/reglementation/qui-est-concerne-par-lobligatoriete-trackdechets"
+              link="https://faq.trackdechets.fr/informations-generiques/les-fondamentaux/reglementation"
             />
             <ToFAQ
               question="Comment s'inscire sur Trackdéchets ?"
