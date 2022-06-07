@@ -415,7 +415,7 @@ export function Resources() {
             <ToFAQ
               question="Est-ce que je suis concerné ?"
               text="Ce produit est à destination de tous les acteurs de la chaîne du déchet dangereux."
-              link="https://faq.trackdechets.fr/informations-generales/qui-est-concerne-par-trackdechets"
+              link="https://faq.trackdechets.fr/informations-generiques/les-fondamentaux/qui-est-concerne-par-trackdechets"
             />
             <ToFAQ
               question="Est-ce que Trackdéchets est obligatoire ?"
