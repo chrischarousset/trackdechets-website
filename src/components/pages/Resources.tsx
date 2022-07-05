@@ -459,21 +459,21 @@ export function Resources() {
           <Typography>Au coeur de Trackdéchets.</Typography>
           <Third>
             <EmbeddedVideo
-              url={"https://www.youtube.com/embed/cqcOscJF34U"}
-              text={
-                "Producteur de déchets dangereux ? <br/> Formez-vous à Trackdéchets en moins de 10min ! "
-              }
-            />
-            <EmbeddedVideo
-              url={"https://www.youtube.com/embed/YmlKTv75rjk"}
-              text={
-                "Transporteurs ? <br/> Formez-vous en 10min à Trackdéchets ! "
-              }
-            />
-            <EmbeddedVideo
               url={"https://www.youtube.com/embed/yjP6vbBtrec"}
               text={
-                "Comment fonctionne la signature<br/>dématérialisée au moment de l'enlèvement ?"
+                "Comment signer un BSD ? <br/> Les deux options"
+              }
+            />
+            <EmbeddedVideo
+              url={"https://www.youtube.com/embed/3kT8X6LnemM"}
+              text={
+                "Transporteur de déchets ? <br/> Formez-vous en 20min"
+              }
+            />
+            <EmbeddedVideo
+              url={"https://www.youtube.com/embed/ILO2pp-4fEw"}
+              text={
+                "Comment réviser un BSD<br/>déjà signé ?"
               }
             />
           </Third>
