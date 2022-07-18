@@ -105,7 +105,7 @@ export function Profiles() {
               </ListItem>
               <ListItem>
                 Je dispose d’un registre réglementaire automatiquement à jour
-                incluant tous mes BSD, quelques soient mes prestataires
+                incluant tous mes BSD, quels que soient mes prestataires
               </ListItem>
               <ListItem>
                 Je peux vérifier les autorisations réglementaires de mes
@@ -202,7 +202,7 @@ export function Profiles() {
               </ListItem>
               <ListItem>
                 Je peux télécharger un registre réglementaire automatiquement à
-                jour incluant tous mes BSD, quelques soient mes clients
+                jour incluant tous mes BSD, quels que soient mes clients
               </ListItem>
               <ListItem>
                 Je peux générer des bordereaux de suivi de déchets pour mes
