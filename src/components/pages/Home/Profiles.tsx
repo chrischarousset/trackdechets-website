@@ -123,7 +123,7 @@ export function Profiles() {
               <ListItem>Fini les relances à mes prestataires</ListItem>
               <ListItem>
                 Plus besoin d’archivage et de compilation pour consolider mon
-                registre réglementaire Sécurité/ transparence sur les
+                registre réglementaire. Sécurité/Transparence sur les
                 prestataires avec qui je travaille
               </ListItem>
             </ProfilesItemList>
