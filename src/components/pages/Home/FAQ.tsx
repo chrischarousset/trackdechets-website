@@ -25,21 +25,32 @@ export function FAQ() {
           <Question>
             <QuestionQuestion>
               Où en est l’outil Trackdéchets ?<br />
-              Peut-on l’utiliser ?
+              Est-il obligatoire?
             </QuestionQuestion>
             <QuestionAnswer>
               Trackdéchets est un outil numérique gratuit, développé par le
-              Ministère de la Transition Écologique et Solidaire sous la forme
-              d’une “start-up d’Etat” depuis 2018.
+              Ministère de la Transition Ecologique, sous un format innovant
+              d'amélioration continue par la donnée et les usages.
             </QuestionAnswer>
             <QuestionAnswer>
-              L'évolution réglementaire prévoit la généralisation de l'usage de
-              la plateforme à compter du 1er janvier 2022, pour tous les acteurs
-              du déchet dangereux.
-              <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043294613">
-                Décret n° 2021-321 du 25 mars 2021 relatif à la traçabilité des
-                déchets, des terres excavées et des sédiments
+              Le décret 2021-321, issu de la Loi Economie Circulaire, impose la
+              dématérialisation de la traçabilité des déchets dangereux et/ou
+              contenant des POP.
+            </QuestionAnswer>
+            <QuestionAnswer>
+              Les arrêtés ministériels du 21 décembre 2021 relatif à la
+              traçabilité des{" "}
+              <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044571389">
+                déchets dangereux
               </Link>
+              {" "}et des{" "}
+              <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044571414">
+                déchets d'amiante
+              </Link>{" "}
+              fixent les dispositions règlementaires pour l'usage de la
+              plateforme et rendent obligatoire la traçabilité dématérialisée
+              pour les déchets concernés (dangereux et amiante) depuis le 1er
+              janvier 2022.
             </QuestionAnswer>
           </Question>
           <Question>
