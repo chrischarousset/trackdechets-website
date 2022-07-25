@@ -544,7 +544,7 @@ export function Resources() {
             <div />
             <ResourceLink
               href={
-                "https://faq.trackdechets.fr/informations-generiques/devenir-partenaires-embarquer-mes-clients"
+                "https://faq.trackdechets.fr/informations-generiques/embarquer-mes-clients-et-prestataires"
               }
               target={"_blank"}
             >
