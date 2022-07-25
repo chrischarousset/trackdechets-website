@@ -65,7 +65,7 @@ export function FAQ() {
             </QuestionAnswer>
             <QuestionAnswer>
               Si vous avez un outil, vous pourrez le connecter à la plateforme
-              grâce à l’API Trackdéchets. Pour savoir plus consultez{" "}
+              grâce à l’API Trackdéchets. Pour en savoir plus consultez{" "}
               <Link href="https://developers.trackdechets.beta.gouv.fr/">
                 la documentation Développeur
               </Link>
