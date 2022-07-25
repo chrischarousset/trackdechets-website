@@ -120,7 +120,6 @@ export function Profiles() {
               <ListItem>
                 Plus besoin de papier à préparer, transmettre, archiver
               </ListItem>
-              <ListItem>Fini les relances à mes prestataires</ListItem>
               <ListItem>
                 Plus besoin d’archivage et de compilation pour consolider mon
                 registre réglementaire Sécurité/ transparence sur les
