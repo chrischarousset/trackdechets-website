@@ -59,7 +59,7 @@ Lors du départ du déchet vers l’installation de collecte ou de traitement (�
 
 La validation consiste à confirmer le nom et la date du départ du déchet. Cliquer sur “Signer”, équivaut à valider les informations et apposer sa signature.
 
-À noter : afin de mieux coller à la réalité du terrain (les utilisateurs producteurs n’ont pas tous un ordinateur ou un téléphone sous la main), il est également possible que le producteur signe sur le compte du transporteur, sur l'outil de ce derneir. Afin de sécuriser qu’il est bien habilité à le faire, le producteur doit saisir le code de sécurité de son établissement qui confirme la signature.
+À noter : afin de mieux coller à la réalité du terrain (les utilisateurs producteurs n’ont pas tous un ordinateur ou un téléphone sous la main), il est également possible que le producteur signe sur le compte du transporteur, sur l'outil de ce dernier. Afin de sécuriser qu’il est bien habilité à le faire, le producteur doit saisir le code de sécurité de son établissement qui confirme la signature.
 
 Si les champs requis ne sont pas tous complétés, le service invite à revenir corriger des champs manquants ou erronés sur le bordereau. La validation n’est possible que si les erreurs sont corrigées.
 
