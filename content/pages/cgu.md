@@ -47,7 +47,7 @@ Le rattachement d'un établissement à un utilisateur (étape 2) est soumis à u
 ### 4.2.1 En ligne
 
 Après connexion, l’utilisateur est dirigé vers le tableau comportant les bordereaux le concernant (si des bordereaux le concernant ont été édités). Le tableau permet de chercher, trier et vérifier l’état des bordereaux.
-L’onglet “Créer un bordereau” permet la création d’un bordereau en mode brouillon. La création du bordereau nécessite de remplir les champs obligatoires, notamment les mêmes champs qu’un bordereau modèle Cerfa historique.
+L’onglet “Créer un bordereau” permet la création d’un bordereau en mode brouillon. La création du bordereau nécessite de remplir les champs obligatoires décrits dans les arrêtés du 21 décembre 2021. 
 Le service permet de conserver des favoris permettant un remplissage facilité des bordereaux suivants ayant des similitudes (destinataires, déchets, transports etc). Il permet au producteur de s’assurer qu’il utilise le bon code de nomenclature de son déchet.
 Lorsque ce bordereau est rempli, il apparaît dans les bordereaux en brouillon.
 
@@ -142,3 +142,4 @@ L'éditeur d'une application tierce s’engage à ne pas commercialiser les donn
 # Article 6 - Mise à jour des conditions d’utilisation
 
 Les termes des présentes conditions d’utilisation peuvent être amendés à tout moment, sans préavis, en fonction des modifications apportées à la plateforme, de l’évolution de la législation ou pour tout autre motif jugé nécessaire.
+Dernière modification : le 18 août 2022
