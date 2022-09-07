@@ -157,7 +157,7 @@ export function Partners({ logos }: PartnersProps) {
           <ContactButtonContainer>
             <Button
               as="a"
-              href="mailto:hello@trackdechets.beta.gouv.fr"
+              href="mailto:contact@trackdechets.beta.gouv.fr"
               variant="secondary"
               size="large"
             >
