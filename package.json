@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "build": "gatsby build",
-    "start": "gatsby develop"
+    "dev": "gatsby develop",
+    "start": "node server.js"
   },
   "dependencies": {
     "@types/react-helmet": "^6.1.0",
