@@ -18,8 +18,8 @@ export const query = graphql`
 export function SEO() {
   const {
     site: {
-      siteMetadata: { title, description, url }
-    }
+      siteMetadata: { title, description, url },
+    },
   } = useStaticQuery(query);
   const image = new URL(trackdechets, url).href;
 
@@ -30,51 +30,55 @@ export function SEO() {
       meta={[
         {
           name: "icon",
-          href: "static/favicon.ico"
+          href: "static/favicon.ico",
         },
         {
           name: "title",
           property: "og:title",
-          content: title
+          content: title,
         },
         {
           name: "description",
           property: "og:description",
-          content: description
+          content: description,
         },
         {
           property: "og:url",
-          content: url
+          content: url,
         },
         {
           property: "og:image",
-          content: image
+          content: image,
         },
         {
           property: "og:type",
-          content: "website"
+          content: "website",
         },
         {
           property: "twitter:card",
-          content: "summary_large_image"
+          content: "summary_large_image",
         },
         {
           "http-equiv": "Content-Security-Policy",
           content:
-            "default-src 'self';base-uri 'self';font-src 'self' https: data:;frame-src youtube.com www.youtube.com statistiques.trackdechets.beta.gouv.fr 0806de2d.sibforms.com;img-src 'self' data:;object-src 'none';script-src 'self' 'unsafe-inline' stats.data.gouv.fr;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+            "default-src 'self';base-uri 'self';font-src 'self' https: data:;frame-src youtube.com www.youtube.com statistiques.trackdechets.beta.gouv.fr 0806de2d.sibforms.com;img-src 'self' data:;object-src 'none';script-src 'self' 'unsafe-inline' stats.data.gouv.fr;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
         },
         {
           "http-equiv": "X-Content-Type-Options",
-          content: "nosniff"
+          content: "nosniff",
         },
         {
           "http-equiv": "X-XSS-Protection",
-          content: "0"
+          content: "0",
+        },
+        {
+          "http-equiv": "X-Frame-Options",
+          content: "deny",
         },
         {
           "http-equiv": "Strict-Transport-Security",
-          content: "max-age=31536000"
-        }
+          content: "max-age=31536000",
+        },
       ]}
     />
   );
