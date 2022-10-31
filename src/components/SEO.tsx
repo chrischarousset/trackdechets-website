@@ -72,10 +72,6 @@ export function SEO() {
           content: "0",
         },
         {
-          "http-equiv": "X-Frame-Options",
-          content: "deny",
-        },
-        {
           "http-equiv": "Strict-Transport-Security",
           content: "max-age=31536000",
         },
