@@ -16,6 +16,7 @@
     "gatsby-plugin-tagmanager": "^1.0.1",
     "gatsby-source-filesystem": "^2.7.0",
     "gatsby-transformer-remark": "^2.12.0",
+    "helmet": "^6.0.0",
     "modern-normalize": "^1.0.0",
     "react": "^17.0.1",
     "react-alice-carousel": "^2.4.0",

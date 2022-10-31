@@ -1,8 +1,16 @@
 const express = require("express");
+const helmet = require("helmet");
 const path = require("path");
 const fs = require("fs");
 
 const app = express();
+app.use(
+  helmet({
+    frameguard: {
+      action: "deny",
+    },
+  })
+);
 const directory = "/" + (process.env.STATIC_DIR || "public");
 app.use(express.static(__dirname + directory));
 
