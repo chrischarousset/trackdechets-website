@@ -12,23 +12,23 @@ app.use(
     },
     contentSecurityPolicy: {
       directives: {
-        defaultSrc: "'self'",
+        defaultSrc: ["'self'"],
         baseUri: "'self'",
         fontSrc: ["'self'", "https:", "data:"],
+        frameAncestors: "'none'",
         frameSrc: [
           "youtube.com",
           "www.youtube.com",
-          "statistiques.trackdechets.beta.gouv.fr",
+          "*.trackdechets.beta.gouv.fr",
         ],
         imgSrc: ["'self'", "data:"],
         scriptSrc: ["'self'", "'unsafe-inline'", "stats.data.gouv.fr"],
-        scriptSrcAttr: ["'self'", "https:", "'unsafe-inline'"],
         styleSrc: ["'self'", "https:", "'unsafe-inline'"],
       },
     },
   })
 );
-
+app.use(helmet.crossOriginEmbedderPolicy({ policy: "credentialless" }));
 const directory = "/" + (process.env.STATIC_DIR || "public");
 app.use(express.static(__dirname + directory));
 
