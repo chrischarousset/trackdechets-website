@@ -90,7 +90,7 @@ export function FAQ() {
                 Consultez notre FAQ.
               </Link>
             </QuestionQuestion>
-            <img src={illustrationFAQ} alt="" />
+            <img src={illustrationFAQ} alt="Faq" loading="lazy" />
           </Question>
         </FAQQuestions>
       </Container>

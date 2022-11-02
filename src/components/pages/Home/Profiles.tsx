@@ -133,7 +133,7 @@ export function Profiles() {
       <ProfilesItem>
         <ProfilesItemInner>
           <ProfilesItemIllustration>
-            <img src={illustrationCollector} alt="" width="250" />
+            <img src={illustrationCollector} alt="Collecteur de déchets" width="250" loading="lazy" />
           </ProfilesItemIllustration>
           <ProfilesItemContent>
             <Typography variant="h3" gutterBottom>

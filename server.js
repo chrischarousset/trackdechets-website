@@ -4,13 +4,31 @@ const path = require("path");
 const fs = require("fs");
 
 const app = express();
+
 app.use(
   helmet({
     frameguard: {
       action: "deny",
     },
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: "'self'",
+        baseUri: "'self'",
+        fontSrc: ["'self'", "https:", "data:"],
+        frameSrc: [
+          "youtube.com",
+          "www.youtube.com",
+          "statistiques.trackdechets.beta.gouv.fr",
+        ],
+        imgSrc: ["'self'", "data:"],
+        scriptSrc: ["'self'", "'unsafe-inline'", "stats.data.gouv.fr"],
+        scriptSrcAttr: ["'self'", "https:", "'unsafe-inline'"],
+        styleSrc: ["'self'", "https:", "'unsafe-inline'"],
+      },
+    },
   })
 );
+
 const directory = "/" + (process.env.STATIC_DIR || "public");
 app.use(express.static(__dirname + directory));
 

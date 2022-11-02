@@ -54,6 +54,7 @@ export function Footer() {
               src={fabriquenumerique}
               alt="Logo de La Fabrique Numérique"
               width="150"
+              loading="lazy"
             />
           </FooterSummaryLogo>
           <FooterSummaryLogo>
