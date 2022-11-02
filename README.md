@@ -17,12 +17,11 @@ Ce dépôt contient les sources du site web de [Trackdéchets](https://trackdech
 
 1. Installer Node.js 14
 2. Lancer la commande `npm install`
-3. Démarrer l'application via la commande `npm start`
+3. Démarrer l'application via la commande `npm run dev`
 
 ## Déploiement
 
-Le site est automatiquement déployée comme une page GitHub (branche `gh-pages`) lorsqu'un nouveau commit est poussé sur la branche `master`.
-Ce déploiement est effectué via une [action GitHub](./.github/workflows/deploy.yml).
+Le site est automatiquement déployé par Scalingo. Le script server.js est utilisé en production pour servir le build. 
 
 ## Modifier les CGU
 
