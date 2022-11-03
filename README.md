@@ -11,6 +11,7 @@ Ce dépôt contient les sources du site web de [Trackdéchets](https://trackdech
   - [Modifier les mentions légales](#modifier-les-mentions-légales)
   - [Ajouter un partenaire](#ajouter-un-partenaire)
   - [Ajouter une bannière d'incident](#ajouter-une-bannière-dincident)
+- [Headers de sécurité](#headers-de-sécurité)
   - [LICENCE](#licence)
 
 ## Installation
@@ -71,6 +72,11 @@ Pour ce faire, il faut modifier la propriété `siteMetadata.incident` dans le f
 
 Cette propriété peut contenir du HTML, par exemple pour ajouter un lien pointant vers une page externe.
 Définir cette propriété comme une chaîne de caractère vide aura pour conséquence de ne pas afficher la bannière.
+
+
+# Headers de sécurité
+
+Les headers sont ajoutés par le server.js, en développement ils ne seront visibles qu'en utilisant ce script.
 
 ## LICENCE
 
