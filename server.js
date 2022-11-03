@@ -10,6 +10,7 @@ app.use(
     frameguard: {
       action: "deny",
     },
+    crossOriginEmbedderPolicy: false,
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'"],
@@ -28,7 +29,7 @@ app.use(
     },
   })
 );
-app.use(helmet.crossOriginEmbedderPolicy({ policy: "credentialless" }));
+
 const directory = "/" + (process.env.STATIC_DIR || "public");
 app.use(express.static(__dirname + directory));
 
