@@ -13,6 +13,7 @@ export const theme: DefaultTheme = {
       fontSize: "2rem",
       lineHeight: "1.25",
       fontWeight: "bold",
+      marginBottom: "2rem",
     },
     h2: {
       fontSize: "1.5rem",
@@ -33,6 +34,8 @@ export const theme: DefaultTheme = {
     body1: {
       fontSize: "1.25rem",
       lineHeight: "1.6",
+      width: "75%",
+      margin: "0 auto 2rem auto",
     },
     body2: {
       fontSize: "1rem",

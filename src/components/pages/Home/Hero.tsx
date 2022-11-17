@@ -4,7 +4,7 @@ import { Button } from "../../Button";
 import { Container } from "../../Container";
 import { Typography } from "../../Typography";
 import { Section } from "../../Section";
-import illustrationHero from "./assets/illustrationHero.png";
+import illustrationHero from "./assets/illustrationHero.svg";
 
 const HeroContainer = styled.div`
   @media ${(props) => props.theme.breakpoints.up("large")} {
