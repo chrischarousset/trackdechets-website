@@ -460,21 +460,15 @@ export function Resources() {
           <Third>
             <EmbeddedVideo
               url={"https://www.youtube.com/watch?v=2ZZFzS5ZU_E"}
-              text={
-                "Comment signer un BSD ? <br/> Les deux options"
-              }
+              text={"Comment signer un BSD ? <br/> Les deux options"}
             />
             <EmbeddedVideo
               url={"https://www.youtube.com/embed/3kT8X6LnemM"}
-              text={
-                "Transporteur de déchets ? <br/> Formez-vous en 20min"
-              }
+              text={"Transporteur de déchets ? <br/> Formez-vous en 20min"}
             />
             <EmbeddedVideo
               url={"https://www.youtube.com/watch?v=zJkBDQ2gpRk"}
-              text={
-                "Comment réviser un BSD<br/>déjà signé ?"
-              }
+              text={"Comment réviser un BSD<br/>déjà signé ?"}
             />
           </Third>
           <Halved>

@@ -27,15 +27,23 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `partners-logos`,
-        path: path.join(__dirname, "content", "partners"),
+        name: `saas-partners-logos`,
+        path: path.join(__dirname, "content", "partners", "saas"),
       },
     },
     {
-      resolve:  `gatsby-plugin-tagmanager`,
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `other-partners-logos`,
+        path: path.join(__dirname, "content", "partners", "others"),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-tagmanager`,
       options: {
         postBody: [
           {

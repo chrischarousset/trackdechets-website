@@ -4,7 +4,15 @@ import { Partners } from "../components/pages";
 
 interface PagePartnersLogos {
   data: {
-    allFile: {
+    saas: {
+      edges: Array<{
+        node: {
+          name: string;
+          publicURL: string;
+        };
+      }>;
+    };
+    others: {
       edges: Array<{
         node: {
           name: string;
@@ -17,16 +25,33 @@ interface PagePartnersLogos {
 
 export default function PagePartners({
   data: {
-    allFile: { edges },
+    saas: { edges: saasEdges },
+    others: { edges: othersEdges },
   },
 }: PagePartnersLogos) {
-  return <Partners logos={edges.map((edge) => edge.node)} />;
+  return (
+    <Partners
+      saasLogos={saasEdges.map((edge) => edge.node)}
+      otherLogos={othersEdges.map((edge) => edge.node)}
+    />
+  );
 }
 
 export const pageQuery = graphql`
   query GetPartnersLogos {
-    allFile(
-      filter: { sourceInstanceName: { eq: "partners-logos" } }
+    saas: allFile(
+      filter: { sourceInstanceName: { eq: "saas-partners-logos" } }
+      sort: { fields: changeTime }
+    ) {
+      edges {
+        node {
+          publicURL
+          name
+        }
+      }
+    }
+    others: allFile(
+      filter: { sourceInstanceName: { eq: "other-partners-logos" } }
       sort: { fields: changeTime }
     ) {
       edges {

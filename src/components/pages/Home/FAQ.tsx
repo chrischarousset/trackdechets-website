@@ -42,8 +42,8 @@ export function FAQ() {
               traçabilité des{" "}
               <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044571389">
                 déchets dangereux
-              </Link>
-              {" "}et des{" "}
+              </Link>{" "}
+              et des{" "}
               <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044571414">
                 déchets d'amiante
               </Link>{" "}
