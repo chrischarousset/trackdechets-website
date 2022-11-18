@@ -83,7 +83,7 @@ export function Partners({ saasLogos, otherLogos }: PartnersProps) {
           <ContactButtonContainer>
             <Button
               as="a"
-              href="mailto:contact@trackdechets.beta.gouv.fr"
+              href="https://assistance.trackdechets.beta.gouv.fr/"
               variant="secondary"
               size="large"
             >
