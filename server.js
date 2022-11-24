@@ -20,6 +20,7 @@ app.use(
         frameSrc: [
           "youtube.com",
           "www.youtube.com",
+          "*.sibforms.com",
           "*.trackdechets.beta.gouv.fr",
         ],
         imgSrc: ["'self'", "data:"],
