@@ -75,7 +75,8 @@ export function Footer() {
           </Typography>
           <UnstyledList>
             <UnstyledListItem>
-              <FooterLink href="mailto:contact@trackdechets.beta.gouv.fr">
+              <FooterLink target="_blank" 
+                href="https://faq.trackdechets.fr/pour-aller-plus-loin/assistance">
                 Nous contacter
               </FooterLink>
             </UnstyledListItem>
